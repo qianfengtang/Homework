@@ -1,0 +1,250 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	margin: 0 auto;
+	text-align: center;
+	font: 16px/1.5 微软雅黑,simsun,sans-serif;
+	font-family: Microsoft Yahei,'\5b8b\4f53',Arial,Verdana;
+	font-size: 16px;
+	color:#fff;
+}
+a{
+	text-decoration: none;
+	font: 16px/1.5 微软雅黑,simsun,sans-serif;
+	font-family: Microsoft Yahei,'\5b8b\4f53',Arial,Verdana;
+	color:#fff;
+}
+li{
+	list-style: none;
+}
+/*bg begin*/
+.background{
+	width: 1903px;
+	height: 1000px;
+	margin: 0 auto;
+	background-image: url(../img/background.jpg);
+	overflow: hidden;
+	text-align: center;
+}
+/*bg end*/
+/*nav begin*/
+.nav{
+	width: 1000px;
+	height: 80px;
+	margin:0 auto;
+	position: fixed;
+	left:452px;
+}
+.navlist1{
+	width: 220px;
+	height: 80px;
+	float: left;
+	position: relative;
+}
+.navlist1 span{
+	display: block;
+	float: left;
+}
+.flag1{
+	width: 38px;
+	height: 48px;
+	background-image: url(../img/icon.png);
+	background-position: -207px -5px;
+	position: absolute;
+	left: 0;
+	top: 15px;
+}
+.flag2{
+	width: 150px;
+	height: 20px;
+	background-image: url(../img/icon.png);
+	background-position: -2px -146px;
+	position: absolute;
+	left: 52px;
+	top: 30px;
+}
+.navlist2{
+	width: 470px;
+	height: 20px;
+	float: right;
+	margin-top: 27px;
+}
+.navlist2 li{
+	
+	border-right: 1px solid white;
+	line-height: 5px;
+	float: left;
+}
+.navlist2 a{
+	padding: 0 11px;
+	line-height: 14px;
+}
+.navlist2 li:last-child{
+	border-right: hidden;
+}
+/*nav end*/
+/*content begin*/
+.content{
+	width: 1000px;
+	height: 1000px;
+	margin: 0 auto;
+	position: relative;
+}
+.title1{
+	width: 534px;
+	height: 60px;
+	position: absolute;
+	margin-top: 216px;
+	margin-left: 233px;
+}
+.title2{
+	position: absolute;
+	margin-top: 300px;
+	margin-left: 118px;
+	width: 764px;
+	height: 26px;
+}
+.content span{
+	display: inline-block;
+	width: 36px;
+	height: 14px;
+	background-image: url(../img/icon.png);
+	background-position: -143px -53px;
+}
+.content1{
+	width: 242px;
+	height: 18px;
+	position: absolute;
+	margin-left: 8px;
+	margin-top: 520px;
+}
+.content2{
+	position: absolute;
+	margin-left: 46px;
+	margin-left: -88px;
+	margin-top: 674px;
+	width: 170px;
+}
+.content3{
+	position: absolute;
+	margin-left: 16px;
+	margin-top: 752px;
+	width: 270px;
+	height: 18px;
+}
+.content4{
+	position: absolute;
+	margin-left: 320px;
+	margin-top: 880px;
+	width: 196px;
+}
+.content5{
+	position: absolute;
+	margin-left: 753px;
+	margin-top: 795px;
+	width: 236px;
+}
+.content6{
+	position: absolute;
+	margin-left: 868px;
+	margin-top: 686px;
+	width: 216px;
+	height: 16px;
+}
+.content7{
+	position: absolute;
+	margin-left: 733px;
+	margin-top: 556px;
+	width: 228px;
+}
+.circle{
+	position: absolute;
+	width: 365px;
+	height: 365px;
+	margin-left: 317px;
+	margin-top: 443px;
+}
+.circle1{
+	width: 365px;
+	height: 365px;
+	position: relative;
+}
+.point{
+	width: 22px;
+	height: 22px;
+	background-image: url(../img/icon.png);
+	background-position: -1px -53px;
+	position: absolute;
+	left: 172px;
+	top: 0px;
+}
+.bar{
+	width: 115px;
+	height: 100px;
+	position: absolute;
+	margin-left: 69px;
+	margin-top: -241px;
+}
+.bar0{
+	width: 115px;
+	height: 100px;
+	position: relative;
+}
+.bar i{
+	display: inline-block;
+}
+.bar1{
+	position: absolute;
+	margin-left: 0px;
+	margin-top: 35px;
+	background-color: #00b6ed;
+	width: 7px;
+	height: 30px;
+	border-radius: 5px;
+}
+.bar2{
+	position: absolute;
+	margin-left: 27px;
+	margin-top: 20px;
+	background-color: #00b6ed;
+	width: 7px;
+	height: 60px;
+	border-radius: 5px;
+}
+.bar3{
+	position: absolute;
+	margin-left: 54px;
+	margin-top: 0px;
+	background-color: #00b6ed;
+	width: 7px;
+	height: 100px;
+	border-radius: 5px;
+}
+.bar4{
+	position: absolute;
+	margin-left: 81px;
+	margin-top: 20px;
+	background-color: #00b6ed;
+	width: 7px;
+	height: 60px;
+	border-radius: 5px;
+}
+.bar5{
+	position: absolute;
+	margin-left: 108px;
+	margin-top: 35px;
+	background-color: #00b6ed;
+	width: 7px;
+	height: 30px;
+	border-radius: 5px;
+}
+#canvasdraw{
+	position: absolute;
+	width: 365px;
+	height: 365px;
+	transform: rotate(-90deg);
+}
+/*content end*/
