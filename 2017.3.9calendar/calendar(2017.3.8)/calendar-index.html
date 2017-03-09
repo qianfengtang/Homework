@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>calendar</title>
+		<link rel="stylesheet" type="text/css" href="css/caledndar-index.css"/>
+	</head>
+	<body>
+		<!--calendar begin-->
+		<div class="calendar">
+		<!--calendarleft begin -->
+			<div class="calendarleft">
+				<!--hotkey begin-->
+				<div class="hotkey">
+					<ul>
+						<li class="li1">
+							<input type="text" name="year" id="" placeholder="&nbsp;2017年" list="yearlist" />
+							<datalist id="yearlist">
+								<option value="2017年"></option>
+								<option value="2018年"></option>
+								<option value="2019年"></option>
+								<option value="2020年"></option>
+								<option value="2021年"></option>
+							</datalist>
+							<a href="#"target="_blank"><div class="icon"></div></a>
+						</li>
+						<li class="li2">
+							<div class="arrow3">
+								<div class="arrow1"></div>
+							</div>
+							<input type="text" name="month" id="" placeholder="3月" list="monthlist" />
+							<datalist id="monthlist">
+								<option value="3月"></option>
+								<option value="4月"></option>
+								<option value="5月"></option>
+								<option value="6月"></option>
+								<option value="7月"></option>
+							</datalist>
+							<a href="#"target="_blank"><div class="icon"></div></a>
+							<div class="arrow4">
+								<div class="arrow2"></div>
+							</div>
+						</li>
+						<li class="li3">
+							<input type="text" name="year" id="" placeholder="&nbsp;假期安排" list="dayofflist" />
+							<datalist id="dayofflist">
+								<option value="元旦"></option>
+								<option value="除夕"></option>
+								<option value="春节"></option>
+								<option value="清明节"></option>
+								<option value="劳动节"></option>
+							</datalist>
+							<a href="#"target="_blank"><div class="icon"></div></a>
+						</li>
+						<li class="li4"><a href="#"target="_blank">返回今天</a></li>
+					</ul>
+				</div>
+				<!--hotkey end-->
+				<!--list begin-->
+				<div class="list">
+					<table>
+						<tr>
+							<th>一</th>
+							<th>二</th>
+							<th>三</th>
+							<th>四</th>
+							<th>五</th>
+							<th>六</th>
+							<th>日</th>
+						</tr>
+						<tr>
+							<td class="td1"><a href="#"target="_blank"><span>27</span><p>龙头节</p></a></td>
+							<td class="td2"><a href="#"target="_blank"><span>28</span><p>初三</p></a></td>
+							<td><a href="#"target="_blank"><span>1</span><p>初四</p></a></td>
+							<td><a href="#"target="_blank"><span>2</span><p>初五</p></a></td>
+							<td><a href="#"target="_blank"><span>3</span><p>初六</p></a></td>
+							<td class="red"><a href="#"target="_blank"><span>4</span><p>初七</p></a></td>
+							<td class="red" id="tr1"><a href="#"target="_blank"><span>5</span><p>惊蛰</p></a></td>
+						</tr>
+						<tr>
+							<td><a href="#"target="_blank"><span>6</span><p>初九</p></a></td>
+							<td><a href="#"target="_blank"><span>7</span><p>初十</p></a></td>
+							<td><a href="#"target="_blank" id="currentday"><span>8</span><p>妇女节</p></a></td>
+							<td><a href="#"target="_blank"><span>9</span><p>十二</p></a></td>
+							<td><a href="#"target="_blank"><span>10</span><p>十三</p></a></td>
+							<td class="red"><a href="#"target="_blank"><span>11</span><p>十四</p></a></td>
+							<td class="red" id="tr1"><a href="#"target="_blank"><span>12</span><p>植树节</p></a></td>
+						</tr>
+						<tr>
+							<td><a href="#"target="_blank"><span>13</span><p>十六</p></a></td>
+							<td><a href="#"target="_blank"><span>14</span><p>十七</p></a></td>
+							<td class="td3"><a href="#"target="_blank"><span>15</span><p>消费者日</p></a></td>
+							<td><a href="#"target="_blank"><span>16</span><p>十九</p></a></td>
+							<td><a href="#"target="_blank"><span>17</span><p>二十</p></a></td>
+							<td class="red"><a href="#"target="_blank"><span>18</span><p>廿一</p></a></td>
+							<td class="red"><a href="#"target="_blank"><span>19</span><p>廿二</p></a></td>
+						</tr>
+						<tr>
+							<td class="td4"><a href="#"target="_blank"><span>20</span><p>春分</p></a></td>
+							<td><a href="#"target="_blank"><span>21</span><p>廿四</p></a></td>
+							<td><a href="#"target="_blank"><span>22</span><p>廿五</p></a></td>
+							<td><a href="#"target="_blank"><span>23</span><p>廿六</p></a></td>
+							<td><a href="#"target="_blank"><span>24</span><p>廿七</p></a></td>
+							<td class="red"><a href="#"target="_blank"><span>25</span><p>廿八</p></a></td>
+							<td class="red"><a href="#"target="_blank"><span>26</span><p>廿九</p></a></td>
+						</tr>
+							<tr>
+							<td><a href="#"target="_blank"><span>27</span><p>三十</p></a></td>
+							<td><a href="#"target="_blank"><span>28</span><p>初一</p></a></td>
+							<td><a href="#"target="_blank"><span>29</span><p>初二</p></a></td>
+							<td><a href="#"target="_blank"><span>30</span><p>初三</p></a></td>
+							<td><a href="#"target="_blank"><span>31</span><p>初四</p></a></td>
+							<td class="td6"><a href="#"target="_blank"><span>1</span><p>愚人节</p></a><b>班</b></td>
+							<td class="td7"><a href="#"target="_blank"><span>2</span><p>初六</p></a><b>休</b></td>
+						</tr>
+					</table>
+				</div>
+				<!--list end-->
+			</div>
+		<!--calendarleft end -->
+		<!--calendarright begin-->
+		<div class="calendarright">
+			<div class="date">2017-03-08 星期三</div>
+			<div class="day">8</div>
+			<div class="nonli">
+				<p>二月二十一</p>
+				<p>丁酉年&nbsp;【鸡年】</p>
+				<p>癸卯月&nbsp;甲午日</p>
+			</div>
+			<div class="suggestion">
+				<div class="yi">
+					<p>宜</p>
+					<ul>
+						<li>祭祀</li>
+						<li>祈福 </li>
+						<li>嫁娶</li>
+						<li>管组</li>
+						<li>修饰垣墙</li>
+					</ul>
+				</div>
+				<div class="buyi">
+					<p>忌</p>
+					<ul>
+						<li>开仓</li>
+						<li>出货财</li>
+						<li>造屋</li>
+						<li>作灶</li>
+						<li>开市</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!--calendarright end-->
+		</div>
+		<!--calendar end-->
+	</body>
+</html>
