@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>矩形面积计算网页</title>
+		<style type="text/css">
+			.wrap{
+				width: 1200px;
+				height: 800px;
+				margin: 50px auto;
+				border: 2px solid black;
+				text-align: center;
+			}
+			h1{
+				text-align: center;
+			}
+			.show{
+				width: 500px;
+				height: 500px;
+				border: 1px solid red;
+				float: left;
+				margin-left: 10px;
+			}
+			.shape{
+				width: 10px;
+				height: 10px;
+				background: blue;
+				margin: 50px auto;
+			}
+			p{
+				font:18px/1.5 "微软雅黑";
+			}
+			input{
+				display: inline-block;
+				line-height: 27px;
+			}
+			span{
+				display: inline-block;
+				height: 27px;
+				font-weight: 500;
+			}
+			.inputcontent{
+				width: 400px;
+				height: 500px;
+				float: right;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap">
+			<h1>矩形面积计算区域</h1>
+			<div class="show">
+				<div class="shape" id="pic"></div>
+				<p>该图形的面积是:<span id="area"></span></p>
+			</div>
+			<div class="inputcontent">
+				<p>请输入矩形的宽：<input type="number" id="width" placeholder="请输入宽"/></p>
+				<p>请输入矩形的高：<input type="number" id="height" placeholder="请输入高" /></p>
+				<button id="btn">确定提交</button>
+			</div>
+		</div>
+		<script type="text/javascript">
+			var oW=document.getElementById("width");
+			var oH=document.getElementById("height");
+			var obtn=document.getElementById("btn");
+			var box=document.getElementById("pic");
+			var s=document.getElementById("area");
+			obtn.onclick=function(){
+				box.style.width=oW.value+'px';
+				box.style.height=oH.value+'px';
+				s.innerHTML=oW.value*oH.value;
+				console.log(oW.value);
+				console.log(oH.value);
+			}
+		</script>
+	</body>
+</html>
