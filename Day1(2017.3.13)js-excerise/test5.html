@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		如果今天是星期六，那么1000天后是：星期<span id="day"></span>
+		<script type="text/javascript">
+			var whatday=document.getElementById("day");
+			whatday.innerHTML=6+(1000%7)-7;
+		</script>
+	</body>
+</html>

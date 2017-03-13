@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	<style type="text/css">
+			div{
+				width: 800px;
+				height: 400px;
+				text-align: left;
+				margin: 50px auto;
+			}
+			span{
+				display: inline-block;
+				height: 18px;
+				line-height: 18px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<p>请用户输入一个三位数：</p><br />
+			你的三位数是：<input type="text" id="deg" placeholder="边长"/><br />
+			<button type="button" id="btn">提交换算</button>
+			<p>这三位数的和是：</p><span id="huashi"></span>
+		</div>
+		<script type="text/javascript">
+			var w=document.getElementById("deg");
+			var h=document.getElementById("huashi");
+			var Obtn=document.getElementById("btn")
+			Obtn.onclick=function(){
+				h.innerHTML=w.value%10+parseInt(w.value/100)+parseInt(w.value/10)%10;
+			}
+
+		</script>
+	</body>
+</html>
