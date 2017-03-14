@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<div class="xbox">
+			<div id="box0"></div>
+			<div id="box1"></div>
+			<div id="box2"></div>
+			<div id="box3"></div>
+			<div id="box4"></div>
+			<div id="box5"></div>
+			<div id="box6"></div>
+			<div id="box7"></div>
+			<div id="box8"></div>
+			<div id="box9"></div>
+		</div>
+		<style type="text/css">
+			.xbox div{
+				width: 200px;
+				height: 200px;
+				background: blue;
+				border: 1px solid black;
+				float: left;
+				margin-right: 10px;
+			}
+		</style>
+		<script type="text/javascript">
+			var boxrow=new Array();
+			var b1=document.getElementById("box0");
+			boxrow[0]=b1;
+			console.log(boxrow[0]);
+			var b2=document.getElementById("box1");
+			boxrow[1]=b2;
+			console.log(boxrow[1]);
+			var b3=document.getElementById("box2");
+			boxrow[2]=b3;
+			var b4=document.getElementById("box3");
+			boxrow[3]=b4
+			var b5=document.getElementById("box4");
+			boxrow[4]=b5;
+			var b6=document.getElementById("box5");
+			boxrow[5]=b6;
+			var b7=document.getElementById("box6");
+			boxrow[6]=b7;
+			var b8=document.getElementById("box7");
+			boxrow[7]=b8;
+			var b9=document.getElementById("box8");
+			boxrow[8]=b9;
+			var b10=document.getElementById("box9");
+			boxrow[9]=b10;
+
+			for(var i=0;i<10;i++){
+				boxrow[i].style.width=200-10*i+'px';
+				boxrow[i].style.height=200-10*i+'px';
+				boxrow[i].style.margin-top=10*i+'px';
+			}
+		</script>
+	</body>
+</html>
