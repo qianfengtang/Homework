@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	width: 400px;
+	height: 400px;
+	margin: 100px auto;
+	text-align: center;
+}
+p{
+	font: 28px/1.5;
+	font-weight: 100;
+}
