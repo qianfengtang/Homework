@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>递归排序</title>
+	</head>
+	<body>
+		<script type="text/javascript">
+		var arr=["a",'b','c','d','e'];
+		var i=0;
+		function paidui(){
+			if(i<4){
+				var go=arr.pop();
+				arr.splice(i,0,go)
+			}else{
+				return;
+			}
+			console.log(i);
+			i++;
+			paidui();
+		}
+		paidui();
+		document.write(arr);
+		</script>
+	
+	</body>
+</html>

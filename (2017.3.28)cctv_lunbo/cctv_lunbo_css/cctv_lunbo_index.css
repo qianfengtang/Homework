@@ -1,0 +1,106 @@
+*{
+	margin: 0;
+	padding: 0;	
+}
+/*初始化*/
+.wrap{
+	text-align: center;
+	margin: 100px auto;
+	color: #fff;
+	font: 21px/38px "Microsoft YaHei";
+}
+a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+li{
+	list-style: none;
+}
+p{
+	font: 21px/38px "Microsoft YaHei";
+}
+/*contain开始*/
+.contain{
+	width: 660px;
+	height: 418px;
+	margin: 0 auto;
+	border: 1px solid red;
+	position: relative;
+}
+/*pic开始*/
+.pic a{
+	height: 418px;
+	position: relative;
+}
+.pic p{
+	width: 660px;
+	height: 38px;
+	line-height: 38px;
+	position: absolute;
+	left: 0;
+	top: 380px;
+	background: #1e63b0;
+}
+.pic p:hover{
+	text-decoration: underline;
+}
+.pic li{
+	display: none;
+}
+/*pic结束*/
+/*btn开始*/
+.btn{
+	width:180px;
+	height: 10px;
+	position: absolute;
+	left: 215px;
+	top: 345px;
+}
+.btn li{
+	width: 10px;
+	height: 10px;
+	float: left;
+	background: #dcdcdc;
+	margin-right: 8px;
+	cursor: pointer;
+}
+#current{
+	background: #1d64af;
+}
+/*btn结束*/
+/*arrow开始*/
+.arrow1{
+	width: 30px;
+	height: 30px;
+	background: url(../cctv_lunbo_img/arrow11.png);
+	position: absolute;
+	left: 20px;
+	top: 180px;
+}
+.arrow1:hover{
+	background: url(../cctv_lunbo_img/arrow1.png);
+}
+.arrow2:hover{
+	background: url(../cctv_lunbo_img/arrow2.png);
+}
+.arrow2{
+	width: 30px;
+	height: 30px;
+	background: url(../cctv_lunbo_img/arrow22.png);
+	position: absolute;
+	right: 20px;
+	top: 180px;
+}
+/*arrow结束*/
+/*contain结束*/
+
+
+
+
+
+
+
+
+
+

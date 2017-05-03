@@ -1,0 +1,104 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	text-align: center;
+	margin: 100px auto;
+	color: #fff;
+	font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+}
+a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+li{
+	list-style: none;
+}
+/*contain开始*/
+.contain{
+	width: 520px;
+	height: 280px;
+	margin: 0 auto;
+	border: 1px solid red;
+	position: relative;
+	overflow: hidden;
+}
+/*pic开始*/
+.pic{
+	width: 10000px;
+	height: 280px;
+	position: absolute;
+	left: 0;top: 0;
+}
+/*#guodu{
+	transition: left 1s ease; 
+}*/
+.pic a{
+	height: 280px;
+}
+.pic li{
+	float: left;
+/*	display: none;*/
+}
+/*pic结束*/
+/*btn开始*/
+.btn{
+	width:75px;
+	height: 20px;
+	position: absolute;
+	border-radius: 10px;
+	background: rgba(255,255,255,.3);
+	bottom: 15px;
+	height: 13px;
+	left: 50%;
+	line-height: 20px;
+}
+.btn li{
+	padding-top: 9px;
+	margin-right: 5px;
+	width: 9px;
+	height: 0;
+	border-radius: 50%;
+	background: #B7B7B7;
+	cursor: pointer;
+	float: left;
+	margin-top: 2px;
+}
+.btn li:nth-of-type(1){
+	margin-left: 5px;
+}
+.btn .current{
+	background: #F40;;
+}
+/*btn结束*/
+/*arrow开始*/
+.arrow1,.arrow2{
+	text-align: center;
+    height: 36px;
+    width: 24px;
+    line-height: 36px;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    font-size: 20px;
+    display: none;
+}
+.arrow1{
+	position: absolute;
+	left: 20px;
+	top: 120px;
+}
+.arrow2{
+	position: absolute;
+	right: 20px;
+	top: 120px;
+}
+.contain:hover .arrow1{
+	display: block;
+}
+.contain:hover .arrow2{
+	display: block;
+}
+/*arrow结束*/
+/*contain结束*/

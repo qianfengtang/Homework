@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		
+	</head>
+	<body>
+		<input type="text" style="width: 500px;height: 20px;"/>
+		<input type="button" value="解密" />
+		<input type="button" name="" id="" value="清空" />
+		<p>柳䩓婅蠌גּ喕喕坾䩸ﬤ啁啁倩䨢﬙瘣媧偰薙䨦戎䰉诳ﬤ䨥懅坾䩸﬙</p>
+		<script type="text/javascript">
+			var ipt=document.getElementsByTagName("input");
+			var result=document.getElementsByTagName("p")[0];
+			ipt[1].onclick=function(){
+				var str=result.innerHTML;
+				for(var i=0;i<str.length;i++){
+					ipt[0].value+=String.fromCharCode((str.charCodeAt(i)+1000));
+				}
+			}
+			ipt[2].onclick=function(){
+				ipt[0].value="";
+			}
+		</script>
+	</body>
+</html>

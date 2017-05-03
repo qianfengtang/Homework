@@ -1,0 +1,464 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.tqf-wrap{
+	margin: 0 auto;
+	text-align: center;
+	font: 12px arial;
+	color: #666;
+}
+a{
+	color: #666;
+}
+li{
+	list-style: none;
+}
+/*导航部分*/
+.tqf-nav{
+	width: 100%;
+	height: 48px;
+}
+.tqf-nav-bar{
+	width: 483px;
+	height: 48px;
+	float: right;
+}
+.tqf-hotkey{
+	width: 396px;
+	height: 24px;
+	margin: 19px 0 5px;
+	float: left;
+}
+.tqf-more{
+	position: relative;
+	margin: 19px 0px 5px 0px;
+}
+.tqf-more,.tqf-more>span{
+	width: 60px;
+	height: 23px;
+	float: right;
+	margin-right: 2px;
+}
+.tqf-more>span{
+	color: #fff;
+	background: #38f;
+	line-height: 24px;
+	font-size: 13px;
+	margin-right: 12px;
+}
+.tqf-hotkey>li{
+	float: left;
+	margin-left: 20px;
+}
+.tqf-hotkey a{
+	color: #333;
+	font-weight: 700;
+	line-height: 24px;
+	font-size: 13px;
+}
+.tqf-hotkey a:hover{
+	color: #00c;
+}
+.lg a,.set a{
+	font-weight: 100;
+}
+.set{
+	position: relative;
+}
+.tqf-set-btn{
+	width: 72px;
+	height: 106px;
+	position: absolute;
+	left: -20px;
+	top: 30px;background-color: #fff;
+	border: 1px solid #d1d1d1;
+	-webkit-box-shadow: 1px 1px 5px #d1d1d1;
+	box-shadow: 1px 1px 5px #d1d1d1;
+	display: none;
+}
+.tqf-set-btn li{
+	background: #fff;
+	color: #333;
+	padding: 0 9px;
+	line-height: 26px;
+}
+.tqf-set-btn li:hover{
+	background: #38f;
+	text-decoration: none;
+	color: #fff;
+}
+.tqf-set-btn:after{
+	content: "";
+	width: 0;
+	height: 0;
+	border-bottom: 8px solid lightgray;
+	border-left: 8px solid transparent;
+	border-right: 8px solid transparent;
+	border-top: 0 none;
+	position: absolute;
+	left: 26px;
+	top: -8px;
+}
+.tqf-more-list{
+	width: 85px;
+	height: 710px;
+	position: absolute;
+	left: -23px;
+	top: -18px;
+	border-left: 1px solid #e7e7e7;
+	background-color: #f9f9f9;
+	display: none;
+}
+.tqf-more-list li{
+	width: 66px;
+	height: 77px;
+	margin-left: 9px;
+	border-bottom: #f0f0f0 1px solid;
+}
+.tqf-more-list li:first-child{
+	color: #333;
+	width: 66px;
+	height: 43px;
+	line-height: 43px;
+	padding-top: 9px;
+	margin: 0 auto;
+	border-bottom: #f0f0f0 1px solid;
+	font-size: 13px;
+}
+.tqf-more-list a{
+	text-decoration: none;
+	display: block;
+}
+.tqf-more-list a:hover{
+	text-decoration: underline;
+}
+.tqf-more-list i{
+	display: block;
+	width: 36px;
+	height: 36px;
+	margin: 10px auto 5px;
+	background-image: url(../baidu_img/bdbri_icons.png);
+}
+.tu1{
+	background-position: 0 0;
+}
+.tqf-more-list .tu2{
+	width: 40px;
+	background-position: -72px 0;
+}
+.tu3{
+	background-position: -112px 0;
+}
+.tu4{
+	background-position: -36px 0;
+}
+.tu5{
+	background-position: -148px 0;
+}
+.tu6{
+	background-position: -184px 0;
+}
+.tqf-more-list li:last-of-type{
+	margin-top: 10px;
+}
+.tqf-mask{
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top:0;
+	left:0;
+	background: #000;
+	opacity: 0.5;
+	z-index: 100;
+	display: none;
+}
+.zhanghao{
+	width: 391px;
+	background-color: #f7f7f7;
+	border: 1px solid #ddd;
+	border-bottom: 0;
+	height: 46px;
+	line-height: 46px;
+	font-size: 16px;
+	font-family: "宋体";
+	font-weight: 700;
+	color: #666;
+	text-align: left;
+	position: relative;
+	cursor: move;
+}
+.zhanghao span:first-child{
+	display: inline-block;
+	margin: 0px 5px 0 15px;
+	vertical-align: middle;
+	width: 24px;
+	height: 32px;
+	background-image: url(../baidu_img/baidu_logo_24_718a6c4.png);
+}
+.tqf-close{
+	display: inline-block;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: 100;
+	width: 16px;
+	height: 16px;
+	line-height: 16px;
+	position: absolute;
+	right: 20px;
+	top: 16px;
+}
+.middle-area{
+	width: 351px;
+	height: 260px;
+	padding-bottom: 30px;
+	margin: 0 auto;	
+}
+.shortmessage{
+	height: 19px;
+	margin: 24px 0 10px;
+	text-align: right;
+}
+.shortmessage span{
+	display: inline-block;
+	width: 9px;
+	height: 14px;
+	vertical-align: middle;
+	margin-right: 3px;
+	background:0 0 url(../baidu_img/smsSwitchPhone_68b31bb.png) ;	
+}
+.shortmessage a{
+	color: #2e7fdb;
+	font-family: Arial,Helvetica,STHeiti,"宋体";
+	font-size: 12px;
+}
+.zh-ipt,.mm-ipt{
+	width: 351px;
+	height: 42px;
+	margin-bottom: 15px;
+	position: relative;
+}
+.zh-ipt span,.mm-ipt span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	background: 0 -68px url(../baidu_img/input_icons_24_2764534.png);
+	position: absolute;
+	left: 7px;
+	top: 10px;
+}
+.mm-ipt span{
+	background-position: 0 -147px;
+}
+.zh-ipt input,.mm-ipt input{
+	width: 300px;
+	height: 16px;
+	padding: 12px 10px 12px 38px;
+	border: 1px solid #ddd;
+	transition: .3s;
+	font-size: 14px;
+	color: #666;
+}
+.zh-ipt input:focus,.mm-ipt input:focus{
+	border-color: #488ee7;
+}
+.login-option{
+	height: 15px;
+	margin-bottom: 15px;
+}
+.login-option span,.login-option input{
+	display: inline-block;
+	font-size: 12px;
+	float: left;
+}
+.login-option input{
+	height: 15px;
+	margin-right: 5px;
+	vertical-align: middle;
+}
+.login-sure{
+	display: block;
+	background-color: #3f89ec;
+	width: 350px;
+	height: 48px;
+	font-size: 16px;
+	font-weight: 700;
+	cursor: pointer;
+	border: none;font-family: inherit;
+	color: #fff;border-radius: 3px;
+	transition: .3s;
+}
+.login-sure:hover{
+	background-color: #4490f7;
+}
+.login-option a,.regest-now a{
+	display: inline-block;
+	float: right;color: #2e7fdb;
+	font-size: 12px;text-decoration: none;
+}
+.login-option a:hover,.regest-now a:hover{
+	text-decoration: underline;
+}
+.regest-now {
+	margin-top: 15px;
+}
+.friendnum{
+	width: 371px;
+	height: 58px;
+	border-top: 1px solid #eee;
+	padding-top: 15px;
+	padding-left: 20px;
+	padding-bottom: 15px;
+	text-align: left;
+	position: relative;
+}
+.friendnum p{
+	height: 18px;
+	font-size: 12px;text-align: left;
+}
+.friendnum span{
+	display: inline-block;
+	width: 24px;
+	height: 24px;
+	margin: 15px 15px 0 0;
+	cursor: pointer;
+	background-image: url(../baidu_img/pass_login_icons_7c6e14d.png);
+}
+.friendnum span:nth-of-type(1){
+	background-position: -88px 0;
+}
+.friendnum span:nth-of-type(2){
+	background-position: -64px 0;
+}
+.friendnum span:nth-of-type(3){
+	width: 44px;
+	height: 44px;
+	position: absolute;
+	right: -2px;
+	bottom: 2px;
+	background-position: -44px -86px;
+	margin: 0;
+}
+.tqf-login-bar{
+	width:393px;
+	height:448px;
+	position: absolute;
+	font: 14px/18px arial,"\5b8b\4f53",sans-serif,"Microsoft YaHei",tahoma;
+	left: 763px;
+	top: 133px;
+	background-color: #FFFFFF;
+	z-index: 1000;
+	display: none;
+}
+/*登录区*/
+.tqf-login{
+	width: 100%;
+	height: 191px;
+}
+.tqf-login img{
+	display: block;
+	width: 270px;
+	height: 129px;
+	margin: 0 auto;
+}
+.tqf-login-area{
+	width: 640px;
+	height: 36px;
+	border: 1px solid #b6b6b6;
+	margin: 0 auto;
+	position: relative;
+}
+.tqf-login-area input:nth-of-type(1){
+	display: inline-block;
+	width: 500px;
+	height: 22px;
+	font: 16px/18px arial;
+	margin: 6px 0 0 7px;
+	float: left;
+	border-style: none;
+}
+.tqf-login-area input:nth-of-type(2){
+	width: 100px;
+	height: 39px;
+	color: #fff;
+	font-size: 15px;
+	letter-spacing: 1px;
+	background: #3385ff;
+	border-bottom: 1px solid #2d78f4;
+	position: absolute;
+	right: -1px;outline: medium;
+	top: -2px;border: 0;
+	padding: 0;
+	cursor: pointer;
+	border-radius: 0;
+}
+.tqf-login-area input:nth-of-type(2):hover{
+	background: #317ef3;
+	box-shadow: 1px 1px 1px #ccc;
+}
+.tqf-login-area i{
+	display: inline-block;
+	height: 16px;
+	width: 18px;
+	background-image: url(../baidu_img/camerapng.png);
+	position: absolute;
+	top: 11px;
+	right: 110px;
+	cursor: pointer;
+}
+.tqf-login-area i:hover{
+	background-position: 0 -20px;
+}
+/*底部区域*/
+.tqf-footer{
+	width: 100%;
+	height: auto;
+	margin:180px auto 50px ;
+}
+.tqf-erweima{
+	width:60px;
+	height: 60px;
+	background-image: url(../baidu_img/zbios_efde696.png);
+	margin: 0 auto;
+}
+.tqf-footer p:nth-of-type(2){
+	width: 55px;
+	height: 23px;
+	line-height: 23px;
+	margin: 0 auto;
+}
+.tqf-friendlink{
+	width: 536px;
+	height: 46px;margin: 0 auto;
+}
+.tqf-friendlink ul{
+	height: 23px;
+	line-height: 23px;
+}
+.tqf-friendlink ul:nth-of-type(1) li{
+	float: left;
+	margin-left: 25px;
+}
+.tqf-friendlink ul:nth-of-type(1) li:first-child{
+	margin-left: 110px;
+}
+.link li:first-child{
+	float: left;
+}
+.link li:last-child{
+	float: right;
+}
+.link a{
+	display: inline-block;
+	margin: 0 2px;
+}
+.tqf-copy,.tqf-alarm{
+	display: inline-block;
+	width: 14px;
+	height: 17px;
+	background: url(../baidu_img/icons.png) -600px -96px;
+	vertical-align: top;
+}
+.tqf-alarm{
+	background-position: -623px -96px;
+}

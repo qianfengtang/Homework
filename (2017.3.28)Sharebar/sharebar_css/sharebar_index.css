@@ -1,0 +1,224 @@
+*{
+	margin: 0;padding: 0;
+}
+/*初始化*/
+.wrap{
+	width:100%;
+	text-align: left;
+	font: 12px Helvetica,Calibri,Tahoma,Arial,宋体,sans-serif;
+	color: #666;
+}
+a{
+	text-decoration: none;
+	display: block;
+	color: #666;
+}
+li{
+	list-style: none;
+}
+span{
+	display: inline-block;
+	color: #000;
+	height: 16px;
+	line-height: 16px;
+	font: 12px Helvetica,Calibri,Tahoma,Arial,宋体,sans-serif;
+}
+em{
+	display: inline-block;
+	width: 16px;
+	height: 16px;
+	background-image: url(../sharebar_img/QQ图片20170329094224.png);
+	position: absolute;
+}
+img{
+	display: block;
+	width: 24px;
+	height: 24px;
+}
+p{
+	height: 20px;
+	line-height: 20px;
+	font-weight: bold;
+	font-size: 100%;
+	float: left;
+}
+.wrap{
+	position: relative;
+}
+/*sharebar开始*/
+.sharebar{
+	width: 258px;
+	height: 286px;
+	padding: 6px;
+	border-radius: 5px;
+	position: relative;
+	border: 2px solid #7F7F7F;
+	position: absolute;
+	right: -274px;
+	top: 100px;
+}
+/*menu2开始*/
+.menu2{
+	padding: 10px 0;
+	font: 2em Helvetica,Calibri,Tahoma,Arial,宋体,sans-serif;
+	width: 28px;
+	background-color: #F33;
+	color: #fff;
+	position: absolute;
+	left: -30px;
+	top: 100px;
+	font-weight: 100;
+	border-radius: 5px 0 0 5px;
+	cursor: pointer;
+}
+/*menu2结束*/
+/*menu1开始*/
+.menu1{
+	width: 258px;
+	height: 286px;
+}
+/*head 开始*/
+.head{
+	padding: 0 8px;
+	border-bottom: 1px solid #e8e8e8;
+	background: #f2f2f2;
+	height: 21px;
+}
+.head p{
+	cursor: pointer;
+}
+.head p:hover,.head a:hover{
+	text-decoration: underline;
+}
+.head a{
+	width: 8px;
+	height: 20px;
+	float: right;
+	line-height: 20px;
+}
+/*head结束*/
+/*bigad开始*/
+.bigad{
+	width: 226px;
+	height: 47px;
+	padding: 4px 0 4px 16px;
+	margin-right: 8px;
+	border-bottom: 1px #ccc solid;
+	margin-left: 8px;
+}
+.bigad a{
+	border: 1px solid #fff;
+	background: #fff;
+	width: 68px;
+	padding: 2px 0;
+}
+.bigad a:hover{
+	background: #D8D8D8;
+	border: 1px solid #D8D8D8;
+}
+.bigad img{
+	width: 24px;
+	height: 24px;
+	margin: 0 18px 2px ;
+}
+.bigad li{
+	float: left;
+}
+.bigad span{
+	padding-left: 6px;
+}
+/*bigad结束*/
+/*smallad开始*/
+.smallad{
+	width: 242px;
+	height: 182px;
+	margin-top: 3px;
+	margin-bottom: 3px;
+	margin-left: 8px;
+}
+.tu1{
+	background-position: 0 -1566px;
+}
+.tu2{
+	background-position: 0 -1800px;
+}
+.tu3{
+	background-position: 0 -108px;
+}
+.tu4{
+	background-position: 0 -1710px;
+}
+.tu5{
+	background-position: 0 -1008px;
+}
+.tu6{
+	background-position: 0 -540px;
+}
+.tu7{
+	background-position: 0 -136px;
+}
+.tu8{
+	background-position: 0 -1647px;
+}
+.tu9{
+	background-position: 0 -1890px;
+}
+.tu10{
+	background-position: 0 -918px;
+}
+.tu11{
+	background-position: 0 -1548px;
+}
+.tu12{
+	background-position: 0 -1476px;
+}
+.tu13{
+	background-position: 0 -460px;
+}
+.tu14{
+	background-position: 0 -576px;
+}
+.smallad span{
+	margin-left: 18px;
+}
+.smallad li{
+	border: 1px solid #fff;
+	background: #fff;
+	width: 111px;
+	height: auto;
+	padding: 2px 4px;
+	margin: 2px 0;
+	float: left;
+}
+.smallad li:hover{
+	background: #D8D8D8;
+	border: 1px solid #D8D8D8;
+}
+/*smallad结束*/
+/*footer开始*/
+.footer{
+	height: 20px;
+	line-height: 20px;
+	padding: 0 8px;
+	border-top: 1px solid #e8e8e8;
+	color: #666;
+	background: #f2f2f2;
+}
+.more{
+	float: left;
+	cursor: pointer;
+}
+.logo{
+	float: right;
+	font: 12px Helvetica,Calibri,Tahoma,Arial,宋体,sans-serif;
+	cursor: pointer;
+}
+.logo span{
+	color: #f60;
+	line-height: 20px;
+}
+/*footer结束*/
+/*menu1结束*/
+/*sharebar结束*/
+
+

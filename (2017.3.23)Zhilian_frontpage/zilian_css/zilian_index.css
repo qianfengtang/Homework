@@ -1,0 +1,382 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*文档开始*/
+.wrap{
+	text-align: left;
+	font-family: 'Microsoft Yahei';
+	font-size: 16px;
+	margin: 0px auto;
+}
+a{
+	text-decoration:none ;
+}
+li{
+	list-style: none;
+}
+/*导航开始*/
+.nav{
+	width:100% ;
+	height: 40px;
+	background-color: #014da3;
+	text-align: center;
+}
+.nav-contain{
+	width: 1020px;
+	margin: 0 auto;
+}
+.nav-list{
+	width:350px;
+	float: left;
+}
+.nav-list li{
+	width: 70px;
+	float: left;
+}
+.nav-list a{
+	display: inline-block;
+	font-size: 12px;
+	line-height: 40px;
+	color: #dde3ee;
+}
+.nav-list span,.footer span{
+	display: inline-block;
+	width: 10px;
+	color: #dde3ee;
+	font-size: 12px;
+	margin-left: 7px;
+}
+.nav-list a:hover{
+	color: #fff;
+}
+.nav-right{
+	height: 40px;
+	width: 150px;
+	float: right;
+}
+.reg,.login{
+	width: 70px;
+	float: left;
+	margin-top: 6px;
+}
+.bar{
+	width: 10px;
+	float: left;
+	margin-top: 6px;
+}
+/*导航结束*/
+/*头部bannar开始*/
+.bannar{
+	width: 100%;
+	height: 76px;
+}
+.bannar-contain{
+	width: 1000px;
+	height: 76px;
+	margin: 0 auto;
+}
+.bannar-contain img{
+	display: block;
+}
+.bannar-left{
+	width: 374px;
+	height: 55px;
+	float: left;
+	margin-top:11px;
+}
+.bannar-right{
+	width: 304px;
+	height: 53px;
+	float: right;
+	margin-top: 14px;
+}
+/*头部bannar结束*/
+/*contant开始*/
+.contant-bg{
+	width: 100%;
+	height: 530px;
+	background-image: url(../zilian_img/bg.jpg);
+}
+.main-con{
+	width: 930px;
+	height: 404px;
+	padding-top:40px ;
+	margin: 0 auto;
+}
+/*contain-left开始*/
+.contain-left{
+	width: 587px;
+	height: 400px;
+	float: left;
+}
+.header-nav{
+	width: 587px;
+	height: 38px;
+	background-image: url(../zilian_img/top.png);
+	background-position: 0px 0px;
+}
+.header-list li{
+	float: left;
+	width: 93px;
+	height: 38px;
+}
+.header-list li:first-child{
+	margin-left: 15px;
+}
+.ad-contain{
+	width: 575px;
+	height: 350px;
+	padding: 7px;
+	border-radius: 5px;
+	background-image: url(../zilian_img/linear.png);
+	background-repeat: repeat-x;
+	cursor: pointer;
+}
+.ad{
+	width: 575px;
+	height: 350px;
+	position: relative;
+}
+.ad li{
+	width: 575px;
+	height: 339px;
+	position: absolute;
+	display: none;
+}
+.bg1,.bg2,.bg3,.bg4,.bg5,.bg6{
+	width: 572px;
+	height: 129px;
+	background-image: url(../zilian_img/alllogo.png);
+}
+.bg1{
+	background-position: 0 0;
+}
+.bg2{
+	background-position: -572px 0;
+}
+.bg3{
+	background-position: 0px -129px;
+}
+.bg4{
+	background-position: -572px -129px;
+}
+.bg5{
+	background-position: 0px -258px;
+}
+.bg6{
+	background-position: -572px -258px;
+}
+.bg11,.bg15,.bg21,.bg25,.bg31,.bg35,.bg41,.bg45,.bg51,.bg55,.bg61,.bg65{
+	width: 138px;
+	height: 64px;
+}
+.bg12,.bg16,.bg22,.bg26,.bg32,.bg36,.bg42,.bg46,.bg52,.bg56,.bg62,.bg66{
+	width: 144px;
+	height: 64px;
+}
+.bg13,.bg17,.bg23,.bg27,.bg33,.bg37,.bg43,.bg47,.bg53,.bg57,.bg63,.bg67{
+	width: 148px;
+	height: 64px;
+}
+.bg14,.bg18,.bg24,.bg28,.bg34,.bg38,.bg44,.bg48,.bg54,.bg58,.bg64,.bg68{
+	width: 141px;
+	height: 64px;
+}
+.bg1 div,.bg2 div,.bg3 div,.bg4 div,.bg5 div,.bg6 div{
+	background: rgba(0,0,0,0.3);
+	float: left;
+}
+.com:hover{
+	background: rgba(0,0,0,0);
+	transition: all 0.3s linear;
+}
+.tb1,.tb2,.tb3,.tb4,.tb5,.tb6{
+	width: 562px;
+	height: 200px;
+	padding: 0 5px;
+	margin-top: 10px;
+}
+table{
+	width: 562px;
+	height: 200px;
+	font-size: 16px;
+	color: rgb(255,255,255);
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+tr:hover{
+	color: rgb(254,161,63);
+}
+/*contain-left结束*/
+/*contain-right开始*/
+.contain-right{
+	width: 295px;
+	height: 404px;
+	float: right;
+	position: relative;
+}
+.userchoose{
+	width: 295px;
+	height: 40px;
+	cursor: pointer;
+	position: relative;
+	text-align: center;
+}
+.userchoose li{
+	width: 164px;
+	line-height: 40px;
+	color: #446495;
+	font-size: 12px;
+	float: left;
+}
+.choose1,.choose2{
+	background:url(../zilian_img/bg2.png) 0px 6px no-repeat;
+	position: absolute;
+}
+.choose1{
+	left:0;
+	top: 0;
+}
+.choose2{
+	left: 131px;
+	top: 0;
+}
+#current{
+	background: url(../zilian_img/bg1.png) no-repeat;
+	z-index: 2;
+}
+.loginarea{
+	width: 219px;
+	height: 333px;
+	padding: 0 37px;
+	background: #fff;
+	border: 1px solid #f7f8fa;
+	border-bottom: 0;
+	border-top: 0;
+}
+.bottompic{
+	position: absolute;
+	left: -1px;
+	top: 373px;
+}
+.tubiao1,.tubiao2{
+	padding-top: 20px;
+}
+.logincon span,.logincon input{
+	width: 222px;
+	display: block;
+	height: 17px;
+	padding: 0px 0 0px 10px;
+}
+.form1 input,.form2 input{
+	border-style: none;
+	height: 40px;
+	font-size: 14px;
+	color: #333;
+	background: url(../zilian_img/input-bg.jpg) no-repeat;
+	background-size: 100%;
+}
+.logincon p,#check,.logincon,#check2{
+	line-height: 20px;
+	font-size: 12px;
+	font-family: '宋体';
+}
+#check,#check2{
+	display: inline-block;
+	width: 10px;
+}
+.submit input,.submit2 input{
+	border-style: none;
+	display: block;
+	margin-top: 1px;
+	width: 234px;
+	height: 41px;
+	color: #fff;
+	font-size: 16px;
+	font-weight: 400;
+	font-family: 'Microsoft Yahei';
+	cursor: pointer;
+	line-height: 41px;
+	background: url(../zilian_img/zhuce.jpg) no-repeat;
+	background-size: 100%;
+}
+.logincon li{
+	display: none;
+}
+/*contain-right结束*/
+/*contant结束*/
+/*adcontant 开始*/
+.adcontant{
+	width: 1000px;
+	height: 73px;
+	padding-top: 27px;
+	margin: 0 auto;
+}
+.adcontant img{
+	display: block;
+	float: left;
+	margin-right: 71px;
+}
+.adcontant img:nth-of-type(4){
+	margin-right: 0px;
+}
+/*adcontant 结束*/
+/*footer 开始*/
+.footer{
+	width: 1000px;
+	margin: 0 auto;
+	margin-top: 10px;
+	border-top: 3px solid #3F7BD3;
+	padding-top: 10px;
+	color: #666;
+	text-align: center;
+	font-size: 12px;
+}
+.footer a{
+	color: #315AAA;
+}
+.footer a:hover{
+	text-decoration: underline;
+}
+.footer li{
+	float: left;
+}
+.footer ul{
+	width: 800px;
+	height: 1px;
+	margin-left:120px ;
+}
+.friendlist1,.friendlist2{
+	width: 125px;
+	height: 46px;
+	border: 1px #D2D2D2 solid;
+	float: left;
+}
+.friendlink{
+	width: 260px;
+	height: 48px;
+	margin: 20px 0 10px 0;
+	overflow: hidden;
+	margin-left: 369px;
+}
+.friendlist1 a,.friendlist2 a{
+	display: block;
+	width: 69px;
+	height: 41px;padding:7px 0 0 5px;
+	float: left;
+	color:#666;
+	word-break: break-word;
+	text-align: left;
+}
+.friendlist2{
+	margin-left: 5px;
+}
+.friendlink img{
+	display: block;
+	width: 39px;
+	height: 44px;
+	float: left;
+}
+/*footer 结束*/
+/*文档结束*/

@@ -1,0 +1,131 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	text-align: center;
+	margin: 100px auto;
+	color: #fff;
+	font: 12px/1.5 tahoma,arial,'Hiragino Sans GB','\5b8b\4f53',sans-serif;
+	width: 100%;
+	height: 440px;
+}
+a{
+	display: block;
+	text-decoration: none;
+	color: #fff;
+}
+li{
+	list-style: none;
+}
+/*contain开始*/
+.contain{
+	width: 778px;
+	height: 440px;
+	margin: 0 auto;
+	position: relative;
+	overflow: hidden;
+}
+/*pic开始*/
+.pic{
+	width: 778px;
+	height: 440px;
+}
+#guodu{
+	-moz-animation: a 1s ease-in; 
+	-webkit-animation: a 1s ease-in; 
+}
+@-moz-keyframes a{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+@-webkit-keyframes a{
+	from{opacity: 0}
+	to{opacity: 1}
+}
+.pic a{
+	height: 440px;
+}
+.pic li{
+	/*display: none;*/
+}
+/*pic结束*/
+/*btn开始*/
+.btn{
+	width:160px;
+	position: absolute;
+	border-radius: 10px;
+	bottom: 15px;
+	height: 20px;
+	left: 41%;
+	line-height: 20px;
+}
+.btn li{
+	padding-top: 14px;
+	margin-right: 10px;
+	width: 14px;
+	height: 0;
+	border-radius: 50%;
+	background: #F5F5F5;
+	cursor: pointer;
+	float: left;
+	margin-top: 5px;
+}
+.btn li:nth-of-type(1){
+	margin-left: 5px;
+}
+#current{
+	background: #F40;;
+	position: relative;
+}
+#current::before{
+	content: "";
+	width: 7px;
+	height: 2px;
+	background: #F5F5F5;
+	position: absolute;
+	left: 8px;
+	top: 6px;
+	transform-origin: left;
+	transform: rotateZ(270deg);
+	-moz-animation:  b 2s ease 1s 1;
+	-webkit-animation:  b 2s ease 1s 1;
+}
+@-moz-keyframes b{
+	from{transform: rotateZ(270px);}
+	to{transform: rotateZ(630deg);}
+}
+@-webkit-keyframes b{
+	from{transform: rotateZ(270px);}
+	to{transform: rotateZ(630deg);}
+}
+/*btn结束*/
+/*arrow开始*/
+.arrow1,.arrow2{
+	text-align: center;
+    height: 36px;
+    width: 24px;
+    line-height: 36px;
+    background: rgba(0,0,0,.3);
+    color: #fff;
+    font-size: 20px;
+    display: none;
+}
+.arrow1{
+	position: absolute;
+	left: 20px;
+	top: 190px;
+}
+.arrow2{
+	position: absolute;
+	right: 20px;
+	top: 190px;
+}
+.contain:hover .arrow1{
+	display: block;
+}
+.contain:hover .arrow2{
+	display: block;
+}
+/*arrow结束*/
+/*contain结束*/

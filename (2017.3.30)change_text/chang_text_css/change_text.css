@@ -1,0 +1,21 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	text-align: left;
+	font: 18px/1.5 "微软雅黑";
+	margin: 100px auto;
+	position:relative ;
+}
+p{
+	width: 800px;
+	height: 300px;
+	border: 1px solid red;
+	margin: 0 auto;
+}
+.text{
+	position: absolute;
+	left: 559px;
+	top: 0;;
+}
