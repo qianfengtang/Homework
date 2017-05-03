@@ -1,0 +1,64 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	width: 200px;
+	padding: 200px;
+	margin: 100px auto;
+	text-align: center;
+	position: relative;
+	-moz-transform-style: preserve-3d;
+	perspective: 1500px;
+	
+	backface-visibility: visible;
+	transform: rotate(100deg 60deg 100deg);
+	border: 1px solid red;
+}
+.wrap div{
+	width: 100px;
+	height: 100px;
+	font: 20px/100px "微软雅黑";
+	position: absolute;
+}
+.b1{
+	background: rgba(0,0,0,.3);
+	left: 0;
+	top: 0;
+}
+.b2{
+	background: rgba(0,0,0,.3);
+	left: -100px;
+	top: 0;
+	transform-origin:right;
+	transform: rotateY(90deg);
+}
+.b3{
+background: rgba(0,0,0,.3);
+	top: -100px;
+	left: 0;
+	transform-origin:bottom;
+	transform: rotateX(-90deg);
+}
+.b4{
+	background: rgba(0,0,0,.3);
+	top: 100px;
+	left: 0;
+	transform-origin:top;
+	transform: rotateX(90deg);
+}
+.b5{
+	background: rgba(0,0,0,.3);
+	left:100px;
+	top: 0;
+	transform-origin:left;
+	transform: rotateY(-90deg);
+}
+.b6{
+	background: rgba(255,255,0,.4);
+	left:000px;
+	top: 0;
+	transform-origin:left;
+	transform: rotateY(-180deg);
+	transform: translateZ(100px);
+}
