@@ -1,0 +1,217 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/*wrap begin*/
+.wrap{
+	font-family: Arial,"Lucida Grande","Microsoft Yahei","Hiragino Sans GB","Hiragino Sans GB W3",SimSun,"PingFang SC",STHeiti;
+	text-align: center;
+	margin: 0px auto;
+}
+a{
+	text-decoration: none;
+	font-size: 16px;
+}
+li{
+	list-style: none;
+}
+/*nav begin*/
+.nav{
+	height: 68px;
+	width: 1000px;
+	margin: 0 auto;
+}
+.logo{
+	width: 136px;
+	height: 39px;
+	padding: 16px 0 13px;
+	float: left;
+}
+.logo a{
+	display: block;
+	width:136px ;
+	height: 39px;
+	background-image: url(../mafegnwo-img/header.png);
+	background-position: 0px 0px;
+}
+.nav-list{
+	width: 564px;
+	height: 68px;
+	padding: 0 10px 0 25px;
+	float: left;
+}
+.nav-list a:hover{
+	color: #ff9d00;
+	height: 65px;
+	border-bottom: 3px solid #ff9d00;
+}
+.nav-list a{
+	display: inline-block;
+	background-color: transparent;
+	padding: 0 16px;
+	color: #333;
+}
+.nav-list li{
+	line-height: 68px;
+	float: left;
+}
+.frontpage a{
+	background-color: #ff9d00;
+	color: #fff;
+}
+.frontpage a:hover{
+	color: #fff;
+	height: 68px;
+	border-bottom: 0px;
+}
+.arrow1,.arrow2{
+	display: inline-block;
+	height: 0;
+	width: 0;
+	border-top: 4px solid #666;
+	border-left: 4px dashed transparent;
+	border-right: 4px dashed transparent;
+	overflow: hidden;
+	transform-origin:center ;
+	margin: 0 -5px 0 3px;
+	transition: transform .5s ease-in-out 0s;
+}
+.mall-h,.shequ-h{
+	height: 65px;
+	border-top: 3px solid white;
+	line-height: 65px;
+	position: relative;
+	z-index: 2;	
+}
+.mall-h:hover,.shequ-h:hover{
+	border-top: 3px solid #ff9d00;
+	border-bottom: 0px !important;
+}
+.mall:hover .sec-list1{
+	display: block;
+}
+.shequ:hover .sec-list2{
+	display: block;
+}
+.sec-list1{
+	width:142px ;
+	height: 292px;
+	background-color: rgba(255,255,255,.98);
+	border: 1px solid raga(0,0,0,.3);
+	position: absolute;
+	left: 0px;
+	top: 67px;
+	z-index: -10;
+	display: none;
+}
+.mall,.shequ{
+	position: relative;
+	z-index: 2;
+}
+.sec-list1 li{
+	height: 40px;
+}
+.sec-list1 a{
+	width: 110px;
+	padding: 0 10px 0 20px;
+	height: 40px;
+	line-height: 40px;
+	text-align: left;
+}
+.sec-list1 a:hover,.sec-list2 a:hover{
+	background-color: #eee;
+	border-bottom: 0px;
+	height:40px ;
+}
+.sec-list2{
+	width: 300px;
+	height: 260px;
+	padding-top: 20px;
+	background-color: rgba(255,255,255,.98);
+	position: absolute;
+	left: 0px;
+	top: 67px;
+	border: 1px solid raga(0,0,0,.3);
+	display: none;
+}
+.area1{
+	width: 137px;
+	height: 260px;
+	padding-left:10px;
+	float: left;
+}
+.area2{
+	width: 145px;
+	height: 224px;
+	padding-left: 8px;float:right;
+}
+.area1 li{
+	width:120px;
+	height: 75px;
+	line-height: 75px;
+	text-align:left;
+	position: relative;
+}
+.area1 a{
+	height: 19px;
+	line-height: 19px;
+	position: absolute;
+	left: 0;
+	top: 0px;
+}
+.area2 li{
+	width: 120px;
+	height: 32px;
+	line-height: 32px;
+}
+.area2 a{
+	height: 16px;
+	line-height: 16px;
+	font-size: 14px;
+}
+.area1 a:hover,.area2 a:hover{
+	background: none;
+	line-height: 19px;
+}
+.login{
+	width: 182px;
+	height: 26px;
+	padding: 21px 0;
+	float: right;
+}
+.login a{
+	color: #ff9d00;font-size: 14px;
+	line-height: 26px;
+}
+.login span{
+	color: whitesmoke;
+}
+/*nav end*/
+/*bannar begin*/
+.bannar{
+	width: 100%;
+	height: 635px;
+	overflow: hidden;
+	position: relative;
+}
+.pic-list{
+	width: 100%;
+	height: 635px;
+}
+.word-list{
+	width: 110px;
+	height: 350px;
+	position: absolute;
+	left: 1740px;
+	top: 110px;
+}
+.word-list li{
+	overflow: hidden;
+	height: 62px;
+	margin-bottom: 6px;
+}
+.active{
+	border: 2px solid #ff9d00;
+}
+/*bannar end*/
+/*wrap end*/

@@ -1,0 +1,90 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+.wrap{
+	width: 660px;
+	height: 300px;
+	margin: 100px auto;
+	font: 12px/1.14 "PingFang SC","Hiragino Sans GB","Microsoft YaHei","WenQuanYi Micro Hei","Helvetica Neue",Arial,sans-serif;
+	text-align: center;
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: #fff;
+	font-size: 14px;
+}
+p{
+	text-overflow: ellipsis;
+	padding-left: 22px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: 700;
+}
+.contant-box{
+	width:600px ;
+	height: 300px;
+	position: relative;
+	float: left;
+	overflow: hidden;
+}
+.ad-contant{
+	width:600px ;
+	height: 10000px;
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.ad-contant li{
+	display: block;
+}
+.ad-contant img,.ad-contant li,.ad-contant a{
+	display: block;
+	width: 600px;
+	height: 300px;
+}
+.ad-contant a{
+	position: relative;
+}
+.ad-contant p{
+	position: absolute;
+	padding-left: 22px;
+	left: 0px;
+	top: 266px;
+}
+.nav-list{
+	width: 60px;
+	height: 286px;
+	padding: 7px 0px;
+	float: right;
+	background-color: #222;
+}
+.nav-list li,.nav-list a{
+	display: block;
+	width:60px ;
+	height: 36px;
+	margin-bottom:14px;
+}
+.nav-list a{
+	line-height: 36px;
+}
+.nav-list li{
+	position: relative;
+}
+.active{
+	background: rgba(237,64,64,.8);
+}
+.active::before{
+	content: '';
+	position: absolute;
+	top: 12px;
+	left: -6px;
+	width: 0;
+	height: 0;
+	border-top: 6px solid transparent;
+	border-right: 6px solid rgba(237,64,64,.8);
+	border-bottom: 6px solid transparent;
+}
