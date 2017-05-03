@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			for(var i=1;i<=9999;i++){
+				var digit=i.toString().length;
+				if(digit<=1){
+					document.write("");
+				} else if(digit<3&&digit>=2){
+					if(i%10==parseInt(i/10)){
+						document.write(i+"<br />");
+						/*console.log(i);*/
+					}
+					document.write("");
+				}else if(digit<4&&digit>=3){
+					if(parseInt(i/100)==i%10&&i%10==(parseInt(i/10))%10){
+						document.write(i+"<br />")
+					}
+					document.write("");
+				}else if(digit<5&&digit>=4){
+					if(parseInt(i/1000)==i%10&&i%10==(parseInt(i/100))%10&&i%10==parseInt((i%100)/10)){
+						document.write(i+"<br />")
+					}
+					document.write("");
+				}
+			}//第一种方法
+			var a,b,c,d;
+			for(var i = 1; i <=9999 ; i++){
+				a = parseInt(i/1000);
+				b = parseInt(i/100)%10; 
+				c = i% 10;
+				d=parseInt((i%100)/10);
+				var digit=i.toString().length;
+				if(digit==2){
+					if(c==d){
+					document.write(i+"<br />");	
+				}
+				document.write("");
+				}
+				if(digit==3){
+				if(b==c&&b==d){
+					document.write(i+"<br />");	
+				}
+				document.write("");
+				}
+				if(digit==4){
+					if(a==c&&b==c&&b==d){
+					document.write(i+"<br />");	
+				}
+				document.write("");
+				}
+			}//第二种方法
+
+		</script>
+	</body>
+	
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			span{
+				display: inline-block;
+				width: 70px;
+				height: 20px;
+				border: 1px solid black;
+				text-align: center;
+				font: 18px "微软雅黑";
+				line-height: 18px;
+				margin-left:-1px;
+				margin-bottom: -1px;
+			}
+			div{
+				width: 1200px;
+				height: 30px;
+				float: right;
+				text-align: right;
+			}
+		</style>
+	</head>
+	<body>
+		<br />
+		<script type="text/javascript">
+		
+				for(var i=9;i>=0;i--){
+					document.write("<div>")
+					for(var j=1;j<=i;j++){
+						document.write("<span>"+i+"*"+j+"="+i*j+"</span>");
+					}
+					document.write("</div>")
+				}
+		
+		</script>
+	</body>
+</html>
