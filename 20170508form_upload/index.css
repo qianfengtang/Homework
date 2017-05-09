@@ -1,0 +1,87 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+a{
+	text-decoration: none;
+}
+.wrap{
+	text-align: center;
+	margin: 0 auto;
+	background: #f1f1f1;
+	font-family: "Microsoft YaHei", "Simsun", Arial;
+}
+/*头部内容开始*/
+.header{
+	width: 100%;
+	height: 90px;
+	background: #00a971;
+}
+.header-container{
+	width: 905px;
+	height: 90px;
+	margin: 0 auto;
+	text-align: left;
+}
+.header a,.header span{
+	display: inline-block;
+	font-size: 16px;
+	color: #fff;
+}
+.header a span:nth-of-type(1){
+	display: inline-block;
+	margin-right: 15px;
+	margin-top: 20px;
+	width: 156px;
+	height: 45px;
+	background-image:url(img/user_logo.jpg) ;
+}
+/*表单内容开始*/
+form{
+	width: 905px;
+	height: 600px;
+	background: white;
+	margin: 50px auto;
+}
+.white{
+	height: 100px;
+}
+label{
+	display: inline-block;
+	height: 33px;
+	line-height: 33px;
+	padding-right: 30px;
+	text-align: right;
+	font-size: 14px;
+	color: #5b5b5b;
+	/*margin-bottom: 15px;*/
+}
+form label:nth-of-type(3){
+	padding-right: 0px;
+}
+form label:nth-of-type(1){
+	margin-top: 50px;
+}
+form span{
+	display: block;
+	color: red;
+	font-size: 12px;
+	height: 15px;
+	padding-bottom: 10px;
+}
+form input{
+	padding: 10px 5px;
+	width: 269px;
+	border: 1px solid #CDCDCD;
+	box-shadow: 3px 3px 3px #ddd inset;
+}
+.put{
+	width: 238px;
+	display: block;
+	background: #00a971;
+	height: 53px;
+	border-radius: 6px;
+	margin: 15px auto;
+	color: white;font-size: 16px;
+	cursor: pointer;
+}
