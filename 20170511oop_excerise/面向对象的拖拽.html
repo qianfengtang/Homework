@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #div1{
+            width: 100px;
+            height: 100px;
+            background: red;
+            position: absolute;
+        }
+    </style>
+    <script>
+//        window.onload=function(){
+//            var oDiv=document.getElementById('div1');
+//            var disX=0;
+//            var disY=0;
+//
+//            //鼠标按下
+//            oDiv.onmousedown=function(ev){
+//                var ev=ev || window.event;
+//
+//                disX=ev.clientX-oDiv.offsetLeft;
+//                disY=ev.clientY-oDiv.offsetTop;
+//
+//                //鼠标移动
+//                document.onmousemove=function(ev){
+//                    var ev=ev || window.event;
+//                    oDiv.style.left=ev.clientX-disX+'px';
+//                    oDiv.style.top=ev.clientY-disY+'px';
+//                };
+//
+//                //鼠标抬起
+//                document.onmouseup=function(){
+//                    document.onmousemove=null;
+//                    document.onmouseup=null;
+//                }
+//
+//                return false;
+//            }
+//        }
+
+        //先变型
+        /*
+         * 先变型：普通方法
+         * 尽量不要出现嵌套函数
+         * 可以有全局变量
+         * 把onload 中不是赋值的语句放到单独的函数中
+         * */
+//        var oDiv=null;
+//        var disX=0;
+//        var disY=0;
+//        window.onload=function(){
+//            oDiv=document.getElementById('div1');
+//            init();
+//        }
+//
+//        function init(){
+//            oDiv.onmousedown=fnDown;
+//        }
+//
+//        function fnDown(ev){
+//           var ev=ev || window.event;
+//           disX=ev.clientX-oDiv.offsetLeft;
+//           disY=ev.clientY-oDiv.offsetTop;
+//
+//           document.onmousemove=fnMove;
+//
+//           document.onmouseup=fnUp;
+//
+//           return false;
+//        }
+//
+//        function fnMove(ev){
+//            var ev=ev || window.event;
+//            oDiv.style.left=ev.clientX-disX+'px';
+//            oDiv.style.top=ev.clientY-disY+'px';
+//        };
+//
+//        function fnUp(){
+//            document.onmousemove=null;
+//            document.onmouseup=null;
+//        }
+
+        //面向对象的写法：
+        /** 全局变量就是属性
+        * 函数就是方法
+        * onload中创建对象*/
+
+        window.onload=function(){
+           var d1=new Drag('div1');
+           d1.init();
+        }
+
+        //构造函数
+        function Drag(id){
+            this.oDiv=document.getElementById(id);
+            this.disX=0;
+            this.disY=0;
+        }
+
+        Drag.prototype.init=function(){
+            var This=this;
+            this.oDiv.onmousedown=function(ev){
+                var ev=ev || event;
+                This.fnDown(ev);
+            }
+        }
+
+        Drag.prototype.fnDown=function(ev){
+            //var ev=ev || window.event;
+            var This=this;
+            this.disX=ev.clientX-this.oDiv.offsetLeft;
+            this.disY=ev.clientY-this.oDiv.offsetTop;
+
+            document.onmousemove=function(ev){
+                //var ev=ev || window.event;
+                This.fnMove(ev);
+            };
+
+            document.onmouseup=this.fnUp;
+
+            return false;
+        }
+
+
+
+        Drag.prototype.fnMove=function(ev){
+           // var ev=ev || window.event;
+            this.oDiv.style.left=ev.clientX-this.disX+'px';
+            this.oDiv.style.top=ev.clientY-this.disY+'px';
+        }
+
+
+        Drag.prototype.fnUp=function(){
+            //阻止默认事件
+            document.onmousemove=null;
+            document.onmouseup=null;
+
+        }
+    </script>
+</head>
+<body>
+    <div id="div1"></div>
+
+</body>
+</html>
