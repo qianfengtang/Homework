@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.wrap_chat{
+				width: 430px;
+				height:561px;
+				/*position: fixed;
+				right: -400px;
+				top:300px;*/
+			}
+			.chat{
+				width: 398px;
+				border-top: 3px solid #00a3f0;
+				border-bottom: 1px solid #ccc;
+				border-left: 1px solid #ccc;
+				border-right: 1px solid #ccc;
+				float: right;
+			}
+			#content{
+				min-height: 500px;
+			}
+			#content li{
+				list-style: none;
+				border: 1px solid #ccc;
+			}
+			#content li:nth-child(2n+1){
+				float: right;
+			}
+			#content li:nth-child(2n){
+				float: left;
+				margin-top: 20px;
+			}
+			.btn{
+				float: left;
+				margin-bottom: 15px;
+				clear: both;
+			}
+			.clearfix{
+				zoom: 1;
+			}
+			.clearfix:after{
+				content: "." ; 
+				display: block ;
+				height: 0 ;
+				clear: both ;
+				visibility: hidden ;
+			}
+			.own{
+				margin-top: 15px;
+			}
+			.own div{
+				float: right;
+				padding: 5px 10px;
+				background: green;
+				color: white;
+				border-radius: 8px;
+				margin-right: 15px;
+			}
+			.machine{
+				margin-top: 15px;
+			}
+			.machine div{
+				float: left;
+				padding: 5px 10px;
+				background: #ccc;
+				color: black;
+				border-radius: 8px;
+				margin-left: 15px;
+			}
+			#robot{
+				width: 300px;
+				height: 30px;
+				margin-left: 15px;
+				border: 1px solid #ccc;
+				float: left;
+			}
+			#send{
+				width: 50px;
+				height: 30px;
+				background: green;
+				color: white;
+				display: block;
+				float: right;
+				font-size: 16px;
+				text-align: center;
+				line-height: 30px;
+				margin-left: 15px;
+				cursor: pointer;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrap_chat">
+			<div class="chat clearfix">
+				<div id="content" class="clearfix">
+					
+				</div>
+				<div class="btn">
+					<input type="text" id="robot"/> 
+					<a id="send"/>发送</a>
+				</div>
+			</div>
+		</div>
+		
+		
+		
+		
+		<script>
+			var content=document.getElementById('content');
+			var send=document.getElementById('send');
+			var robot=document.getElementById('robot');
+			var taste=document.getElementsByClassName('taste')[0];
+			var wrap_chat=document.getElementsByClassName('wrap_chat')[0];
+			var xmlHttp
+		send.onclick=function(){
+			if(robot.value==''){
+				return
+			}else{
+				 var xmlHttp;
+		        if(window.XMLHttpRequest){
+		        	xmlHttp=new XMLHttpRequest(); 
+		        }else{
+		        	xmlHttp=new ActiveXObject('Microsoft.XMLHTTP');
+		        }
+		       
+		         var url="http://www.tuling123.com/openapi/api?key=df8bc33ac88a48528428a0f9563dd704";
+		         url=url+"&info="+robot.value;
+		         url=url+"&userid=1234" ;
+		         var own="<div class='own clearfix'><div>"+robot.value+"</div></div>"
+		         xmlHttp.onreadystatechange=function(){
+		         	if (xmlHttp.readyState==4 && xmlHttp.status==200){
+//		         		console.log( xmlHttp.responseText);
+						var msg=eval('(' + xmlHttp.responseText + ')');
+						content.innerHTML+=own+"<div class='machine clearfix'><div>"+msg.text+"</div></div>"
+						
+					}
+		         }
+		         xmlHttp.open("GET",url,true);
+		         xmlHttp.send(null);
+		        document.getElementById("robot").value="";
+			}
+			
+		}
+				
+
+		</script>
+	</body>
+</html>
