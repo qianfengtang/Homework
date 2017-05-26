@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>前端研习社-图书管理系统</title>
+        <style>
+            h1 {
+                text-align: center;
+            }
+
+            table,
+            td,
+            th {
+                border-collapse: collapse;
+                border-spacing: 0
+            }
+
+            table {
+                width: 600px;
+                margin: 0 auto;
+                text-align: center;
+            }
+
+            td,
+            th {
+                border: 1px solid #bcbcbc;
+                padding: 5px 10px;
+            }
+
+            th {
+                background: #42b983;
+                font-size: 1.2rem;
+                font-weight: 400;
+                color: #fff;
+                cursor: pointer;
+            }
+
+            tr:nth-of-type(odd) {
+                background: #fff;
+            }
+
+            tr:nth-of-type(even) {
+                background: #eee;
+            }
+
+            .add {
+                width: 400px;
+                padding: 10px 50px;
+                margin: 10px auto;
+                background: #ccc;
+                border-radius: 5px;
+            }
+
+            h2 {
+                text-align: center;
+            }
+
+            p {
+                height: 50px;
+                line-height: 50px;
+            }
+
+            input {
+                width: 300px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
+                padding-left: 10px;
+            }
+
+            p button {
+                float: right;
+                width: 100px;
+                height: 50px;
+                line-height: 50px;
+                font-size: 20px;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="app">
+            <h1 v-pre>图书管理系统</h1> 
+            <table>
+                <thead v-pre>
+                    <tr>
+                    	<th>序号</th>
+                        <th>书名</th>
+                        <th>作者</th>
+                        <th>价格</th>
+                        <th>标签</th>
+                        <th>操作</th>
+                    </tr>
+                </thead> 
+                <tbody>
+                    <tr v-for="book in books">
+                    	<td>{{book.id}}</td>
+                        <td>{{book.name}}</td>
+                        <td>{{book.author}}</td>
+                        <td>{{book.price}}</td> 
+                        <td>{{book.tag}}</td> 
+                        <td v-on:click="delbook(book.id-1)"><button>删除</button></td>
+                    </tr>
+                </tbody>
+            </table> 
+            <div class="add">
+                <h2 v-pre>添加新书</h2> 
+                <div class="form-group">
+                    <p>书名：<input type="text" v-model="newbook.name"></p> 
+                    <p>作者：<input type="text" v-model="newbook.author"></p> 
+                    <p>价格：<input type="text" v-model="newbook.price"></p> 
+                    <p>标签：<input type="text" v-model="newbook.tag"></p> 
+                    <p><button @click="addbook()">添加</button></p>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script type="text/javascript"src="vuejs/vue.js"></script>
+    <script type="text/javascript">
+    	var app=new Vue({
+    		el:"#app",
+    		data:{
+    			books:[{id:1,name:"《三国演义》",author:"罗贯中",price:"99.99",tag:"经典"},
+    				   {id:2,name:"《红楼梦》",author:"曹雪芹",price:"98.99",tag:"推荐"},
+    				   {id:3,name:"《水浒传》",author:"施耐庵",price:"55.99",tag:"经典"},
+    				   {id:4,name:"《西游记》",author:"吴承恩",price:"56.99",tag:"推荐"},
+    			],
+    			newbook:{
+    				id:'',
+    				name:'',
+    				author:'',
+    				price:'',
+    				tag:''
+    			}
+    		},
+    		methods:{
+    			delbook:function(id){
+    				alert(id);
+    				this.books.splice(id,1);
+    				
+    			},
+    			addbook:function(){
+    				var len=this.books.length;
+    				var currentid=this.books[len-1].id;
+    				this.newbook.id=currentid+1;
+    				this.books.push(this.newbook);
+    				this.newbook={};
+    			}
+    		}
+    	})
+    </script>
+</html>
