@@ -1,0 +1,610 @@
+<html class="">
+<head>
+<title>jquery和css3打造超梦幻的三维动画背景</title>
+    <style class="cp-pen-styles">
+        *
+        {
+            pointer-events: none;
+        }
+        
+        body
+        {
+            background: #101010;
+            margin: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+        
+        .container
+        {
+            position: absolute;
+            height: 100%;
+            width: 100%;
+        }
+        
+        .container div
+        {
+            position: absolute;
+            background: #9CEE02;
+            width: 30px;
+            height: 30px;
+            border-radius: 100%;
+            box-shadow: "0px 0px 4px 0px #9CEE02";
+        }
+    </style>
+</head>
+<body>
+    <div class="container" style="opacity: 0.55; -webkit-perspective: 50px;">
+        <div style="opacity: 0.2947823575597065; top: 25.280094302041324%; left: 15.581679259241795%;
+            -webkit-transform: translate3d(0px, 0px, -432.3485655846125px);">
+        </div>
+        <div style="opacity: 0.2362372545831523; top: 36.062830199416766%; left: 49.03769811965006%;
+            -webkit-transform: translate3d(0px, 0px, -300.9242458682137px);">
+        </div>
+        <div style="opacity: 0.7945728285013693; top: 1.1005283190668242%; left: 89.45601886040826%;
+            -webkit-transform: translate3d(0px, 0px, 220.87633925971335px);">
+        </div>
+        <div style="opacity: 0.6032704371280895; top: -10.861773561283117%; left: 70.82407544163306%;
+            -webkit-transform: translate3d(0px, 0px, -290.90311310554074px);">
+        </div>
+        <div style="opacity: 0.5473793530207037; top: -13.786377321983%; left: 77.1884905982503%;
+            -webkit-transform: translate3d(0px, 0px, 236.43288643918842px);">
+        </div>
+        <div style="opacity: 0.8321063074591623; top: 36.35549054134144%; left: 15.581679259241795%;
+            -webkit-transform: translate3d(0px, 0px, -258.51720729376433px);">
+        </div>
+        <div style="opacity: 0.2638954450395508; top: 91.56911321935844%; left: 26.51884905982503%;
+            -webkit-transform: translate3d(0px, 0px, 308.45037777725383px);">
+        </div>
+        <div style="opacity: 0.821706110252273; top: 73.08796227918347%; left: 1.5816792592417945%;
+            -webkit-transform: translate3d(0px, 0px, -373.3157927631445px);">
+        </div>
+        <div style="opacity: 0.41247042161282194; top: 30.493716980058323%; left: 92.54398113959174%;
+            -webkit-transform: translate3d(0px, 0px, -606.8885474071105px);">
+        </div>
+        <div style="opacity: 0.5431607328785839; top: 48.50628301994168%; left: 32.91203772081653%;
+            -webkit-transform: translate3d(0px, 0px, 13.21326478553084px);">
+        </div>
+        <div style="opacity: 0.3379231634960905; top: -5.773811282099647%; left: 59.342924501458086%;
+            -webkit-transform: translate3d(0px, 0px, 115.39683008559905px);">
+        </div>
+        <div style="opacity: 0.4976874633790573; top: 64.0251320797667%; left: 40.418320740758205%;
+            -webkit-transform: translate3d(0px, 0px, -114.38026472862197px);">
+        </div>
+        <div style="opacity: 0.5212611585208831; top: 23.824075441633056%; left: 29.07539623930012%;
+            -webkit-transform: translate3d(0px, 0px, -295.4256035899733px);">
+        </div>
+        <div style="opacity: 0.9216158130296365; top: 92.5816792592418%; left: 26.012566039883353%;
+            -webkit-transform: translate3d(0px, 0px, -263.57639606857356px);">
+        </div>
+        <div style="opacity: 0.803085562468689; top: 39.98743396011665%; left: -5.430886780641559%;
+            -webkit-transform: translate3d(0px, 0px, -475.36077373200965px);">
+        </div>
+        <div style="opacity: 0.5951313066301442; top: 64.83664148151641%; left: 43.1884905982503%;
+            -webkit-transform: translate3d(0px, 0px, 130.41996250681888px);">
+        </div>
+        <div style="opacity: 0.5548650668221975; top: -6.824075441633058%; left: 78.68220757830862%;
+            -webkit-transform: translate3d(0px, 0px, 547.9246037606999px);">
+        </div>
+        <div style="opacity: 0.26480921421653314; top: 6.543981139591736%; left: 44.92460376069988%;
+            -webkit-transform: translate3d(0px, 0px, -198.63158552628903px);">
+        </div>
+        <div style="opacity: 0.12745373368645582; top: 12.405754700874851%; left: 76.71990569795868%;
+            -webkit-transform: translate3d(0px, 0px, -173.22418905935348px);">
+        </div>
+        <div style="opacity: 0.38244975239875467; top: 72.48115094017497%; left: 8.405754700874851%;
+            -webkit-transform: translate3d(0px, 0px, -202.05718911626235px);">
+        </div>
+        <div style="opacity: 0.4255795852350481; top: 59.12566039883353%; left: 19.40575470087485%;
+            -webkit-transform: translate3d(0px, 0px, 660.4454524790717px);">
+        </div>
+        <div style="opacity: 0.2793291263417266; top: 84.11309435895018%; left: 46.51884905982503%;
+            -webkit-transform: translate3d(0px, 0px, 328.741754245604px);">
+        </div>
+        <div style="opacity: 0.43063469609787397; top: 7.924603760699882%; left: 51.08796227918347%;
+            -webkit-transform: translate3d(0px, 0px, -607.3396409693366px);">
+        </div>
+        <div style="opacity: 0.3743294547206851; top: 50.12566039883353%; left: 31.59424529912515%;
+            -webkit-transform: translate3d(0px, 0px, -822.497716297152px);">
+        </div>
+        <div style="opacity: 0.5052618019934247; top: 16.569113219358442%; left: 8.631943418775206%;
+            -webkit-transform: translate3d(0px, 0px, 819.5946031916113px);">
+        </div>
+        <div style="opacity: 0.7319100587968272; top: 59.05026415953341%; left: 13.824075441633058%;
+            -webkit-transform: translate3d(0px, 0px, -320.460018177502px);">
+        </div>
+        <div style="opacity: 0.45248395095645616; top: -7.3429245014580875%; left: 16.73247173784203%;
+            -webkit-transform: translate3d(0px, 0px, 181.44837811870696px);">
+        </div>
+        <div style="opacity: 0.9878215328111059; top: 90.51884905982503%; left: 44.025132079766706%;
+            -webkit-transform: translate3d(0px, 0px, 357.19049025679715px);">
+        </div>
+        <div style="opacity: 0.6463783658299369; top: 31.380622621108145%; left: 94.49371698005832%;
+            -webkit-transform: translate3d(0px, 0px, 670.5135658691568px);">
+        </div>
+        <div style="opacity: 0.5487027797896961; top: 36.581679259241795%; left: 95.55654717947509%;
+            -webkit-transform: translate3d(0px, 0px, -485.131301481988px);">
+        </div>
+        <div style="opacity: 0.6260105173758076; top: 58.84920752139976%; left: 88.28009430204132%;
+            -webkit-transform: translate3d(0px, 0px, 160.80950974320282px);">
+        </div>
+        <div style="opacity: 0.844145209092942; top: 105.79894336186635%; left: 81.33035846157473%;
+            -webkit-transform: translate3d(0px, 0px, 349.6355848433828px);">
+        </div>
+        <div style="opacity: 0.624518486962012; top: 106.89947168093317%; left: 43.92460376069988%;
+            -webkit-transform: translate3d(0px, 0px, 552.1005283190668px);">
+        </div>
+        <div style="opacity: 0.45238944136321246; top: 60.100528319066825%; left: 11.025132079766706%;
+            -webkit-transform: translate3d(0px, 0px, -669.2930182344109px);">
+        </div>
+        <div style="opacity: 0.9006378674194274; top: 93.30522638180803%; left: 71.16335851848359%;
+            -webkit-transform: translate3d(0px, 0px, -227.29594387404606px);">
+        </div>
+        <div style="opacity: 0.8292944255367867; top: 4.012566039883353%; left: 22.92460376069988%;
+            -webkit-transform: translate3d(0px, 0px, -775.6448673511447px);">
+        </div>
+        <div style="opacity: 0.450899859431296; top: 51.46858490029162%; left: 9.594245299125149%;
+            -webkit-transform: translate3d(0px, 0px, -804.6339430773221px);">
+        </div>
+        <div style="opacity: 0.8460599553511161; top: 51.51884905982503%; left: 7.087962279183471%;
+            -webkit-transform: translate3d(0px, 0px, 56.456018860408264px);">
+        </div>
+        <div style="opacity: 0.6444665822879965; top: 2.7073396580753233%; left: 64.84920752139976%;
+            -webkit-transform: translate3d(0px, 0px, 210.33764131078985px);">
+        </div>
+        <div style="opacity: 0.5697111950362651; top: 64.35549054134144%; left: 89.50628301994168%;
+            -webkit-transform: translate3d(0px, 0px, 484.80458444502074px);">
+        </div>
+        <div style="opacity: 0.23027849810136836; top: 38.50628301994168%; left: 79.34292450145809%;
+            -webkit-transform: translate3d(0px, 0px, 379.1524342446609px);">
+        </div>
+        <div style="opacity: 0.5769023793048005; top: 33.8115094017497%; left: 0.6822075783086188%;
+            -webkit-transform: translate3d(0px, 0px, -132.95301937258796px);">
+        </div>
+        <div style="opacity: 0.5669354839192088; top: 50.619377378891855%; left: 78.69477361819197%;
+            -webkit-transform: translate3d(0px, 0px, 185.93881156664392px);">
+        </div>
+        <div style="opacity: 0.5582677264920424; top: 76.59424529912515%; left: 14.150792478600236%;
+            -webkit-transform: translate3d(0px, 0px, -339.03205703649564px);">
+        </div>
+        <div style="opacity: 0.5150511454597172; top: 32.8115094017497%; left: 64.49371698005832%;
+            -webkit-transform: translate3d(0px, 0px, 392.06283019941674px);">
+        </div>
+        <div style="opacity: 0.5526981849835917; top: 81.96230188034994%; left: 57.15079247860024%;
+            -webkit-transform: translate3d(0px, 0px, -732.2334715671154px);">
+        </div>
+        <div style="opacity: 0.32638600507880755; top: 18.468584900291617%; left: 85.55654717947509%;
+            -webkit-transform: translate3d(0px, 0px, -572.8670567519514px);">
+        </div>
+        <div style="opacity: 0.5777876989580621; top: 63.619377378891855%; left: 50.76124524221629%;
+            -webkit-transform: translate3d(0px, 0px, -459.2225472932928px);">
+        </div>
+        <div style="opacity: 0.42548854502495664; top: 67.70733965807533%; left: 35.50628301994168%;
+            -webkit-transform: translate3d(0px, 0px, 5.998358233939314px);">
+        </div>
+        <div style="opacity: 0.820079646281509; top: 32.44345282052491%; left: 98.89947168093317%;
+            -webkit-transform: translate3d(0px, 0px, -715.5747543025129px);">
+        </div>
+        <div style="opacity: 0.9576128643932926; top: 67.12566039883353%; left: 36.83664148151641%;
+            -webkit-transform: translate3d(0px, 0px, 779.2192637611714px);">
+        </div>
+        <div style="opacity: 0.8373481672868216; top: 32.98743396011665%; left: 32.51884905982503%;
+            -webkit-transform: translate3d(0px, 0px, 554.9302448438543px);">
+        </div>
+        <div style="opacity: 0.8658646064081912; top: 96.9748679202333%; left: 94.84920752139976%;
+            -webkit-transform: translate3d(0px, 0px, -369.69441572570577px);">
+        </div>
+        <div style="opacity: 0.39606496978041933; top: 14.44345282052491%; left: 39.43088678064156%;
+            -webkit-transform: translate3d(0px, 0px, -889.5139237616429px);">
+        </div>
+        <div style="opacity: 0.432057976649524; top: 60.694773618191974%; left: 40.26752826215797%;
+            -webkit-transform: translate3d(0px, 0px, -546.016565356977px);">
+        </div>
+        <div style="opacity: 0.9127657033858957; top: 63.51884905982503%; left: 81.40575470087485%;
+            -webkit-transform: translate3d(0px, 0px, 533.0109242738226px);">
+        </div>
+        <div style="opacity: 0.48131641995247765; top: 41.70733965807533%; left: 94.96230188034994%;
+            -webkit-transform: translate3d(0px, 0px, 557.3432823939443px);">
+        </div>
+        <div style="opacity: 0.8493540463783269; top: -3.824075441633058%; left: 76.15079247860024%;
+            -webkit-transform: translate3d(0px, 0px, 585.6068113390085px);">
+        </div>
+        <div style="opacity: 0.6245654973289664; top: 15.912037720816528%; left: 8.949735840466587%;
+            -webkit-transform: translate3d(0px, 0px, -95.15971709387603px);">
+        </div>
+        <div style="opacity: 0.40098049294659993; top: 75.33035846157473%; left: 73.71990569795868%;
+            -webkit-transform: translate3d(0px, 0px, 348.25132079766706px);">
+        </div>
+        <div style="opacity: 0.15368353771179627; top: 50.64450945865856%; left: 73.92460376069988%;
+            -webkit-transform: translate3d(0px, 0px, 545.6392262679904px);">
+        </div>
+        <div style="opacity: 0.7505115812067529; top: 92.89947168093317%; left: 42.138226438716885%;
+            -webkit-transform: translate3d(0px, 0px, 228.89911378844698px);">
+        </div>
+        <div style="opacity: 0.714504079131281; top: 18.974867920233294%; left: 51.33035846157473%;
+            -webkit-transform: translate3d(0px, 0px, -5.90839629620897px);">
+        </div>
+        <div style="opacity: 0.30769639283241773; top: 26.188490598250297%; left: 4.075396239300118%;
+            -webkit-transform: translate3d(0px, 0px, -376.6647162402432px);">
+        </div>
+        <div style="opacity: 1.0131818885403767; top: 19.368056581224792%; left: 60.974867920233294%;
+            -webkit-transform: translate3d(0px, 0px, -362.91603703791026px);">
+        </div>
+        <div style="opacity: 0.5314067490749046; top: 72.1884905982503%; left: 49.6068113390085%;
+            -webkit-transform: translate3d(0px, 0px, -119.71626427335113px);">
+        </div>
+        <div style="opacity: 0.31324689812193834; top: 99.45601886040826%; left: 55.98743396011665%;
+            -webkit-transform: translate3d(0px, 0px, -157.48515025726869px);">
+        </div>
+        <div style="opacity: 0.5164192337813795; top: 47.08796227918347%; left: 81.17592455836694%;
+            -webkit-transform: translate3d(0px, 0px, 527.8240754416331px);">
+        </div>
+        <div style="opacity: 0.5067106877008114; top: 57.861773561283115%; left: 82.48115094017497%;
+            -webkit-transform: translate3d(0px, 0px, 212.88526387498914px);">
+        </div>
+        <div style="opacity: 0.4240497661909056; top: 37.456018860408264%; left: 91.55654717947509%;
+            -webkit-transform: translate3d(0px, 0px, 206.69841504279952px);">
+        </div>
+        <div style="opacity: 0.8076888611667428; top: 30.368056581224792%; left: 49.35549054134144%;
+            -webkit-transform: translate3d(0px, 0px, 697.3234335048458px);">
+        </div>
+        <div style="opacity: 0.5923478128759918; top: 0.4937169800583235%; left: 15.493716980058323%;
+            -webkit-transform: translate3d(0px, 0px, -188.38790547032326px);">
+        </div>
+        <div style="opacity: 0.44059618922329974; top: 40.77381128209964%; left: 87.94973584046659%;
+            -webkit-transform: translate3d(0px, 0px, 126.6676418798784px);">
+        </div>
+        <div style="opacity: 0.4614041014922332; top: 53.98743396011665%; left: 38.73247173784203%;
+            -webkit-transform: translate3d(0px, 0px, 598.7900187465906px);">
+        </div>
+        <div style="opacity: 0.4962862234839861; top: 66.59424529912515%; left: 10.12566039883353%;
+            -webkit-transform: translate3d(0px, 0px, -782.7596034761556px);">
+        </div>
+        <div style="opacity: 0.8699765769609815; top: 56.35549054134144%; left: 15.3931886609915%;
+            -webkit-transform: translate3d(0px, 0px, -452.91896267754544px);">
+        </div>
+        <div style="opacity: 0.47631975601803056; top: 93.93716980058323%; left: 60.35549054134144%;
+            -webkit-transform: translate3d(0px, 0px, 483.87633925971335px);">
+        </div>
+        <div style="opacity: 0.4192526593030663; top: 13.631943418775206%; left: 25.44345282052491%;
+            -webkit-transform: translate3d(0px, 0px, -49.76817019894523px);">
+        </div>
+        <div style="opacity: 0.3937115110923392; top: -4.280094302041324%; left: 60.899471680933175%;
+            -webkit-transform: translate3d(0px, 0px, -266.07211270717875px);">
+        </div>
+        <div style="opacity: 0.7728430737809499; top: 40.6068113390085%; left: 7.251320797667059%;
+            -webkit-transform: translate3d(0px, 0px, -380.9821507694484px);">
+        </div>
+        <div style="opacity: 0.5009402821608286; top: 34.91203772081653%; left: 6.443452820524912%;
+            -webkit-transform: translate3d(0px, 0px, 153.69841504279952px);">
+        </div>
+        <div style="opacity: 0.41528560736884934; top: 57.694773618191974%; left: 30.12566039883353%;
+            -webkit-transform: translate3d(0px, 0px, 277.57767994214805px);">
+        </div>
+        <div style="opacity: 0.30860871726442246; top: 48.062830199416766%; left: 12.238754757783706%;
+            -webkit-transform: translate3d(0px, 0px, -97.86541498589068px);">
+        </div>
+        <div style="opacity: 0.22883482242769476; top: 93.96230188034994%; left: 83.5816792592418%;
+            -webkit-transform: translate3d(0px, 0px, 61.28937680980329px);">
+        </div>
+        <div style="opacity: 0.6308894992744223; top: 24.280094302041324%; left: 70.56911321935844%;
+            -webkit-transform: translate3d(0px, 0px, 269.03041527043496px);">
+        </div>
+        <div style="opacity: 0.2887155508812919; top: 54.88690564104982%; left: 86.35549054134144%;
+            -webkit-transform: translate3d(0px, 0px, 586.4580185189551px);">
+        </div>
+        <div style="opacity: 0.6007739924879153; top: 46.83664148151641%; left: 4.175924558366942%;
+            -webkit-transform: translate3d(0px, 0px, -19.145151395445822px);">
+        </div>
+        <div style="opacity: 0.6108126305487662; top: 69.82407544163306%; left: 55.51884905982503%;
+            -webkit-transform: translate3d(0px, 0px, 272.11309435895015px);">
+        </div>
+        <div style="opacity: 0.4552901689810411; top: 59.94973584046659%; left: 0.2513207976670593%;
+            -webkit-transform: translate3d(0px, 0px, -718.0360563535894px);">
+        </div>
+        <div style="opacity: 0.6243567037643859; top: 66.1884905982503%; left: 6.493716980058323%;
+            -webkit-transform: translate3d(0px, 0px, 702.5836789177887px);">
+        </div>
+        <div style="opacity: 0.6382329138560177; top: -3.3303584615747344%; left: 3.5942452991251477%;
+            -webkit-transform: translate3d(0px, 0px, 245.2731693453124px);">
+        </div>
+        <div style="opacity: 0.3415451599114475; top: 24.912037720816528%; left: 17.20105663813365%;
+            -webkit-transform: translate3d(0px, 0px, -827.3594898584352px);">
+        </div>
+        <div style="opacity: 0.6963576411280878; top: 25.100528319066825%; left: 47.26752826215797%;
+            -webkit-transform: translate3d(0px, 0px, -42.694773618191974px);">
+        </div>
+        <div style="opacity: 0.6054379693208507; top: 66.92460376069988%; left: -0.9371698005832352%;
+            -webkit-transform: translate3d(0px, 0px, -10.576038176087366px);">
+        </div>
+        <div style="opacity: 0.3577430399365196; top: 55.543981139591736%; left: -19.254962222274617%;
+            -webkit-transform: translate3d(0px, 0px, 86.23475544068998px);">
+        </div>
+        <div style="opacity: 0.237993585689399; top: 54.50628301994168%; left: 2.619377378891853%;
+            -webkit-transform: translate3d(0px, 0px, -581.4239618239126px);">
+        </div>
+        <div style="opacity: 0.8394841599942787; top: 73.66964153842527%; left: 12.987433960116647%;
+            -webkit-transform: translate3d(0px, 0px, -714.4831505987219px);">
+        </div>
+        <div style="opacity: 0.43878905698041676; top: 14.493716980058323%; left: 106.79894336186635%;
+            -webkit-transform: translate3d(0px, 0px, 89.46694313423093px);">
+        </div>
+        <div style="opacity: 0.8401818872526222; top: 57.694773618191974%; left: 11.6068113390085%;
+            -webkit-transform: translate3d(0px, 0px, 112.40611259336106px);">
+        </div>
+        <div style="opacity: 0.5201176693529403; top: 59.92460376069988%; left: 19.861773561283115%;
+            -webkit-transform: translate3d(0px, 0px, 766.5747543025129px);">
+        </div>
+        <div style="opacity: 0.5382026821159639; top: 4.631943418775206%; left: 82.84920752139976%;
+            -webkit-transform: translate3d(0px, 0px, -656.7202635904448px);">
+        </div>
+        <div style="opacity: 0.5184303640187078; top: 92.86177356128312%; left: 60.73247173784203%;
+            -webkit-transform: translate3d(0px, 0px, -320.25096290518087px);">
+        </div>
+        <div style="opacity: 0.7107626656844216; top: 69.9748679202333%; left: 97.93716980058323%;
+            -webkit-transform: translate3d(0px, 0px, -47.69877293528572px);">
+        </div>
+        <div style="opacity: 0.5063944607627032; top: 38.22618871790036%; left: 118.26752826215797%;
+            -webkit-transform: translate3d(0px, 0px, 25.07539623930012px);">
+        </div>
+        <div style="opacity: 0.5358165529850207; top: 8.087962279183472%; left: 60.3931886609915%;
+            -webkit-transform: translate3d(0px, 0px, 131px);">
+        </div>
+        <div style="opacity: 0.7539047334435577; top: 35.88690564104982%; left: 70.73247173784203%;
+            -webkit-transform: translate3d(0px, 0px, -373.65543373248124px);">
+        </div>
+        <div style="opacity: 0.31011703714266436; top: 54.694773618191974%; left: 91.28009430204132%;
+            -webkit-transform: translate3d(0px, 0px, -304.2837357266489px);">
+        </div>
+        <div style="opacity: 0.5361109570530102; top: 71.86177356128312%; left: 48.49371698005832%;
+            -webkit-transform: translate3d(0px, 0px, -250.4288871220947px);">
+        </div>
+        <div style="opacity: 0.37286888361439163; top: 92.53141509970838%; left: 38.66964153842527%;
+            -webkit-transform: translate3d(0px, 0px, -112.07539623930012px);">
+        </div>
+        <div style="opacity: 0.6803797790522811; top: 75.68220757830862%; left: 71.786377321983%;
+            -webkit-transform: translate3d(0px, 0px, 334.6011702558541px);">
+        </div>
+        <div style="opacity: 0.8387977265409172; top: 31.987433960116647%; left: 82.34292450145809%;
+            -webkit-transform: translate3d(0px, 0px, -184.168999601638px);">
+        </div>
+        <div style="opacity: 0.6602200675737488; top: 71.45601886040826%; left: 66.71990569795868%;
+            -webkit-transform: translate3d(0px, 0px, 262.8710560690451px);">
+        </div>
+        <div style="opacity: 0.358246480936524; top: 86.59424529912515%; left: 58.43088678064156%;
+            -webkit-transform: translate3d(0px, 0px, -85.05554735020165px);">
+        </div>
+        <div style="opacity: 0.5725118722549849; top: 10.631943418775206%; left: 64.61937737889185%;
+            -webkit-transform: translate3d(0px, 0px, -661.046980627412px);">
+        </div>
+        <div style="opacity: 0.5610712978837; top: 76.6068113390085%; left: -0.4685849002916176%;
+            -webkit-transform: translate3d(0px, 0px, -345.9996421075138px);">
+        </div>
+        <div style="opacity: 0.22222044380352302; top: 52.83664148151641%; left: 37.100528319066825%;
+            -webkit-transform: translate3d(0px, 0px, -400.42160427287956px);">
+        </div>
+        <div style="opacity: 0.47330101682285075; top: 88.53141509970838%; left: -11.836641481516411%;
+            -webkit-transform: translate3d(0px, 0px, -283.55126398880685px);">
+        </div>
+        <div style="opacity: 0.38229503489198824; top: 4.644509458658559%; left: 89.92460376069988%;
+            -webkit-transform: translate3d(0px, 0px, -172.7341135039027px);">
+        </div>
+        <div style="opacity: 0.6457548044243568; top: 105.3931886609915%; left: 5.987433960116647%;
+            -webkit-transform: translate3d(0px, 0px, -518.4381696298567px);">
+        </div>
+        <div style="opacity: 0.5934738557367476; top: 15.35549054134144%; left: 10.163358518483589%;
+            -webkit-transform: translate3d(0px, 0px, -124.20434017025502px);">
+        </div>
+        <div style="opacity: 0.3821871566083709; top: 35.43088678064156%; left: 50.91203772081653%;
+            -webkit-transform: translate3d(0px, 0px, -450.1061694022212px);">
+        </div>
+        <div style="opacity: 0.6380792420794819; top: 22.468584900291617%; left: 4.012566039883353%;
+            -webkit-transform: translate3d(0px, 0px, 179.60645344652232px);">
+        </div>
+        <div style="opacity: 0.2558180220280034; top: 77.63194341877521%; left: 49.23875475778371%;
+            -webkit-transform: translate3d(0px, 0px, -395.6120945296767px);">
+        </div>
+        <div style="opacity: 0.35789300319670864; top: 109.29266034192467%; left: 33.59424529912515%;
+            -webkit-transform: translate3d(0px, 0px, -15.213622678017px);">
+        </div>
+        <div style="opacity: 0.8155507982807113; top: 53.694773618191974%; left: 97.786377321983%;
+            -webkit-transform: translate3d(0px, 0px, 101.47586774950673px);">
+        </div>
+        <div style="opacity: 0.2986670959713058; top: 26.59424529912515%; left: -17.773811282099647%;
+            -webkit-transform: translate3d(0px, 0px, -879.4867920233294px);">
+        </div>
+        <div style="opacity: 0.6562094298205445; top: 31.16335851848359%; left: 15.075396239300119%;
+            -webkit-transform: translate3d(0px, 0px, -458.96758507101816px);">
+        </div>
+        <div style="opacity: 0.6818672609622133; top: 74.29266034192467%; left: 45.23875475778371%;
+            -webkit-transform: translate3d(0px, 0px, -20.858490029161743px);">
+        </div>
+        <div style="opacity: 0.7124118451068036; top: 19.35549054134144%; left: 5.443452820524912%;
+            -webkit-transform: translate3d(0px, 0px, -163.07339658075324px);">
+        </div>
+        <div style="opacity: 0.40211719961051695; top: 78.46858490029162%; left: 35.35549054134144%;
+            -webkit-transform: translate3d(0px, 0px, -273.26788615464415px);">
+        </div>
+        <div style="opacity: 0.1905104061760466; top: 44.43088678064156%; left: 48%; -webkit-transform: translate3d(0px, 0px, 87.06283019941677px);">
+        </div>
+        <div style="opacity: 0.34208791326396865; top: 65.06283019941677%; left: 50.062830199416766%;
+            -webkit-transform: translate3d(0px, 0px, -136.0194909966123px);">
+        </div>
+        <div style="opacity: 0.5551722278813114; top: 55.305226381808026%; left: 9.226188717900353%;
+            -webkit-transform: translate3d(0px, 0px, 377.26917002821864px);">
+        </div>
+        <div style="opacity: 0.36974901760768153; top: -8.330358461574734%; left: 30.25132079766706%;
+            -webkit-transform: translate3d(0px, 0px, -80.79166051265125px);">
+        </div>
+        <div style="opacity: 0.6977127874354069; top: 17.330358461574733%; left: 70.77381128209964%;
+            -webkit-transform: translate3d(0px, 0px, 186.71462250729044px);">
+        </div>
+        <div style="opacity: 0.5831992305519382; top: 102.45601886040826%; left: 112.8115094017497%;
+            -webkit-transform: translate3d(0px, 0px, 614.7308299717813px);">
+        </div>
+        <div style="opacity: 0.5675460973376805; top: 18.418320740758205%; left: 64.66964153842527%;
+            -webkit-transform: translate3d(0px, 0px, 453.4021132762673px);">
+        </div>
+        <div style="opacity: 0.1292663889925884; top: 52.84920752139976%; left: 54.55654717947509%;
+            -webkit-transform: translate3d(0px, 0px, -245.98943361866353px);">
+        </div>
+        <div style="opacity: 0.4737238237103155; top: 6.682207578308619%; left: 63.03769811965006%;
+            -webkit-transform: translate3d(0px, 0px, 382.8564903706149px);">
+        </div>
+        <div style="opacity: 0.5965602626781422; top: 107.79894336186635%; left: 15.087962279183472%;
+            -webkit-transform: translate3d(0px, 0px, 129.1435096293851px);">
+        </div>
+        <div style="opacity: 0.7497209898623872; top: 66.1884905982503%; left: 32.50628301994168%;
+            -webkit-transform: translate3d(0px, 0px, -819.7883769805298px);">
+        </div>
+        <div style="opacity: 0.43948507743590437; top: 68.3931886609915%; left: 47.1884905982503%;
+            -webkit-transform: translate3d(0px, 0px, 103.36241549807036px);">
+        </div>
+        <div style="opacity: 0.46943234358591734; top: 10.937169800583234%; left: 14.012566039883353%;
+            -webkit-transform: translate3d(0px, 0px, -512.0826790885152px);">
+        </div>
+        <div style="opacity: 0.6782098603898916; top: 98.96230188034994%; left: 64.66964153842527%;
+            -webkit-transform: translate3d(0px, 0px, -261.4682270078054px);">
+        </div>
+        <div style="opacity: 1.0353394873600892; top: 40.824075441633056%; left: 44.20105663813365%;
+            -webkit-transform: translate3d(0px, 0px, 456.65343407393436px);">
+        </div>
+        <div style="opacity: 0.6269328548289838; top: 34.88690564104982%; left: 52.96230188034994%;
+            -webkit-transform: translate3d(0px, 0px, -950.4510935622262px);">
+        </div>
+        <div style="opacity: 0.6130747438033195; top: 100.45601886040826%; left: 73.46858490029162%;
+            -webkit-transform: translate3d(0px, 0px, -565.4490939036793px);">
+        </div>
+        <div style="opacity: 0.3411878316802337; top: 103.79894336186635%; left: 8.188490598250295%;
+            -webkit-transform: translate3d(0px, 0px, 466.93716980058326px);">
+        </div>
+        <div style="opacity: 0.6523572707168036; top: 37.3931886609915%; left: 53.254962222274614%;
+            -webkit-transform: translate3d(0px, 0px, -227.86177356128312px);">
+        </div>
+        <div style="opacity: 0.8681007740387923; top: 67.77381128209964%; left: 14.949735840466587%;
+            -webkit-transform: translate3d(0px, 0px, 226.03969777819694px);">
+        </div>
+        <div style="opacity: 0.38475589856728754; top: 58.98743396011665%; left: 14.201056638133648%;
+            -webkit-transform: translate3d(0px, 0px, -565.2569618808214px);">
+        </div>
+        <div style="opacity: 0.7606582523468411; top: 45.84920752139976%; left: 30.087962279183472%;
+            -webkit-transform: translate3d(0px, 0px, 575.4203203993051px);">
+        </div>
+        <div style="opacity: 0.49179903752284154; top: 51.63194341877521%; left: 10.238754757783706%;
+            -webkit-transform: translate3d(0px, 0px, -170.65379196642053px);">
+        </div>
+        <div style="opacity: 0.4893798607295712; top: 14.456018860408264%; left: 46.22618871790036%;
+            -webkit-transform: translate3d(0px, 0px, -656.9371698005832px);">
+        </div>
+        <div style="opacity: 0.5685081481239442; top: 68.34292450145809%; left: 102.92460376069988%;
+            -webkit-transform: translate3d(0px, 0px, 143.93552803452255px);">
+        </div>
+        <div style="opacity: 0.661947387022489; top: 20.213622678017%; left: 20.824075441633056%;
+            -webkit-transform: translate3d(0px, 0px, 458.9590183482286px);">
+        </div>
+        <div style="opacity: 0.19258232030110017; top: 19.16335851848359%; left: -6.773811282099647%;
+            -webkit-transform: translate3d(0px, 0px, -141.1884905982503px);">
+        </div>
+        <div style="opacity: 0.6096141726263856; top: 20.631943418775208%; left: -19.74867920233294%;
+            -webkit-transform: translate3d(0px, 0px, -10.515207635217472px);">
+        </div>
+        <div style="opacity: 0.5483274079964251; top: 72.88690564104982%; left: 78.98743396011665%;
+            -webkit-transform: translate3d(0px, 0px, 434.1187354421046px);">
+        </div>
+        <div style="opacity: 0.36780886791711526; top: 31.619377378891855%; left: 77.0251320797667%;
+            -webkit-transform: translate3d(0px, 0px, 497.8297165247875px);">
+        </div>
+        <div style="opacity: 0.6671979290079355; top: 48.6068113390085%; left: 98.89947168093317%;
+            -webkit-transform: translate3d(0px, 0px, 673.6752826215798px);">
+        </div>
+        <div style="opacity: 0.524474369083155; top: -5.811509401749705%; left: 76.94973584046659%;
+            -webkit-transform: translate3d(0px, 0px, -910.6537919664205px);">
+        </div>
+        <div style="opacity: 0.4154300114314185; top: 40.33035846157473%; left: 57.88690564104982%;
+            -webkit-transform: translate3d(0px, 0px, 200.89911378844698px);">
+        </div>
+        <div style="opacity: 0.9030289176620128; top: 52.84920752139976%; left: 90.83664148151641%;
+            -webkit-transform: translate3d(0px, 0px, 328.91896267754544px);">
+        </div>
+        <div style="opacity: 0.389389160781196; top: -1.924603760699882%; left: 36.50628301994168%;
+            -webkit-transform: translate3d(0px, 0px, 550.4543770943476px);">
+        </div>
+        <div style="opacity: 0.7937396284898923; top: 41.062830199416766%; left: 108.786377321983%;
+            -webkit-transform: translate3d(0px, 0px, 135.61537806179814px);">
+        </div>
+        <div style="opacity: 0.26055136507302956; top: 96.54398113959174%; left: 40.28009430204132%;
+            -webkit-transform: translate3d(0px, 0px, 211.51484974273131px);">
+        </div>
+        <div style="opacity: 0.2549705096463745; top: 103.38062262110815%; left: -8.886905641049824%;
+            -webkit-transform: translate3d(0px, 0px, -815.5066409124279px);">
+        </div>
+        <div style="opacity: 0.5193377617346461; top: 51.28009430204132%; left: 52.213622678017%;
+            -webkit-transform: translate3d(0px, 0px, 167.48279270623567px);">
+        </div>
+        <div style="opacity: 0.40598020049390204; top: 76.65707549854191%; left: 61.745037777725386%;
+            -webkit-transform: translate3d(0px, 0px, 111.41667897469752px);">
+        </div>
+        <div style="opacity: 0.7926559342896404; top: 100.77381128209964%; left: 78.9748679202333%;
+            -webkit-transform: translate3d(0px, 0px, 22.303584615747354px);">
+        </div>
+        <div style="opacity: 0.692151590546611; top: 45.8115094017497%; left: 76.36805658122479%;
+            -webkit-transform: translate3d(0px, 0px, 104.71590638086496px);">
+        </div>
+        <div style="opacity: 0.5508007379091381; top: 24.811509401749703%; left: 96.30522638180803%;
+            -webkit-transform: translate3d(0px, 0px, -79.69277395964511px);">
+        </div>
+        <div style="opacity: 0.6940000335741796; top: 94.93716980058323%; left: 75.786377321983%;
+            -webkit-transform: translate3d(0px, 0px, 9.97650968629398px);">
+        </div>
+        <div style="opacity: 0.22567197707670705; top: 51.01256603988335%; left: 13.163358518483589%;
+            -webkit-transform: translate3d(0px, 0px, 524.9103959547558px);">
+        </div>
+    </div>
+    <script src="/scripts/2bc/_gg_970_90.js" type="text/javascript"></script>
+    <script src="jquery.js"></script>
+    <script src="TweenMax.min.js"></script>
+    <script>        function random(min, max) {
+            return Math.floor(Math.random() * (1 + max - min) + min);
+        }
+
+
+        // setup
+
+        var tl = new TimelineMax({ repeat: -1 }),
+    container = $(".container"),
+    html = "",
+    isMobile = !!("ontouchstart" in window),
+    dotsCount = isMobile ? 80 : 175;
+
+        for (var i = 0; i < dotsCount; i++) {
+            html += "<div></div>";
+        }
+
+        var dots = $(html).appendTo(container);
+
+
+        // animation
+
+        dots.each(function () {
+            tl.add(TweenMax.fromTo(this, 6, {
+                left: random(0, 100) + "%",
+                top: random(0, 100) + "%",
+                z: random(-725, 600),
+                opacity: Math.random()
+            }, {
+                left: "+=" + random(-40, 40) + "%",
+                top: "+=" + random(-36, 36) + "%",
+                z: "+=" + random(-725, 600),
+                opacity: Math.random() + 0.1,
+                repeat: 1,
+                yoyo: true,
+                ease: Sine.easeInOut
+            }), 0);
+        });
+
+        tl.fromTo(container, .8, { perspective: 50, opacity: .55 }, { perspective: 215, opacity: .9, ease: Sine.easeInOut }, 3.25)
+  .to(container, .8, { perspective: 50, opacity: .55, ease: Sine.easeInOut }, 6.5); //@ sourceURL=pen.js
+    </script>
+</body>
+</html>
